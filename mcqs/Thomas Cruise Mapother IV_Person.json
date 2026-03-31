@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the 2004 crime thriller \"Collateral,\" who played the role of the contract killer Vincent alongside Jamie Foxx's character, Max?",
+        "A": "John Tyler",
+        "B": "The Rock",
+        "C": "Marshall Bruce Mathers III",
+        "D": "Thomas Cruise Mapother IV",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            34,
+            1
+        ],
+        "page_ranks": [
+            14.25,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            -0.08,
+            0.07
+        ],
+        "triple": [
+            "Thomas Cruise Mapother IV",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Collateral",
+            "Movie"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "This actor, known for his role in \"Minority Report,\" has received a Golden Globe Award. Who is he?",
+        "A": "Scotty Moore",
+        "B": "Thomas Cruise Mapother IV",
+        "C": "Anthony Russo",
+        "D": "Donald Trump",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            8,
+            34,
+            1
+        ],
+        "page_ranks": [
+            2.85,
+            14.25,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            0.04,
+            0.03
+        ],
+        "triple": [
+            "Thomas Cruise Mapother IV",
+            "Person",
+            "RECEIVED_AWARD",
+            "->",
+            "Golden Globe Award",
+            "Award"
+        ],
+        "helper_triple": [
+            "Thomas Cruise Mapother IV",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Minority Report",
+            "Movie"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In addition to an acclaimed actor known for his action-packed roles, who has won an award also received by Willard Carroll Smith II?",
+        "A": "Thomas Cruise Mapother IV",
+        "B": "George Harrison",
+        "C": "Willard Carroll Smith II",
+        "D": "Paul McCartney",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Golden Globe Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            34,
+            8,
+            35
+        ],
+        "page_ranks": [
+            14.25,
+            2.85,
+            14.56
+        ],
+        "distractor_depths": [
+            3,
+            2,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            0.11,
+            -0.04
+        ],
+        "quintuple": [
+            "Thomas Cruise Mapother IV",
+            "Person",
+            "RECEIVED_AWARD",
+            "->",
+            "Golden Globe Award",
+            "Award",
+            "RECEIVED",
+            "<-",
+            "Willard Carroll Smith II",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In character as the snarky personality Deadpool, which actor, known for his portrayal of a daring military pilot, has been awarded the same prestigious film accolade for which Ryan Reynolds has been nominated?",
+        "A": "Usher",
+        "B": "Joe Bryant",
+        "C": "Sharon Tate",
+        "D": "Thomas Cruise Mapother IV",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Golden Globe Award",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            26,
+            8,
+            34,
+            1
+        ],
+        "page_ranks": [
+            10.98,
+            2.85,
+            14.25,
+            0.5
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.16,
+            -0.04,
+            -0.01
+        ],
+        "quintuple": [
+            "Ryan Rodney Reynolds",
+            "Person",
+            "NOMINATED_FOR",
+            "->",
+            "Golden Globe Award",
+            "Award",
+            "RECEIVED_AWARD",
+            "<-",
+            "Thomas Cruise Mapother IV",
+            "Person"
+        ],
+        "helper_triple": [
+            "Thomas Cruise Mapother IV",
+            "Person",
+            "HAS_OCCUPATION",
+            "->",
+            "American Actor",
+            "Occupation"
+        ],
+        "valid": true
+    }
+]

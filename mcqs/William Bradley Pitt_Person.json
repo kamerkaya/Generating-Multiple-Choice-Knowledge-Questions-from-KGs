@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which of these individuals is known for their work as a film producer?",
+        "A": "Sonny Liston",
+        "B": "6Ix9Ine",
+        "C": "Ye",
+        "D": "William Bradley Pitt",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            34,
+            1
+        ],
+        "page_ranks": [
+            12.91,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            -0.02,
+            -0.04
+        ],
+        "triple": [
+            "William Bradley Pitt",
+            "Person",
+            "IS_A",
+            "->",
+            "Film Producer",
+            "Profession"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which actor starred in both the action-comedy film \"Mr. & Mrs. Smith\" and the classic film \"Thelma & Louise\"?",
+        "A": "6Ix9Ine",
+        "B": "Kourtney Kardashian",
+        "C": "Arnold Alois Schwarzenegger",
+        "D": "William Bradley Pitt",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            34,
+            1
+        ],
+        "page_ranks": [
+            0.8,
+            12.91,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            0.01,
+            -0.07
+        ],
+        "triple": [
+            "William Bradley Pitt",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Mr. & Mrs. Smith",
+            "Film"
+        ],
+        "helper_triple": [
+            "William Bradley Pitt",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Thelma & Louise",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which person, who shares an award nomination history with John Christopher Depp II, is a recipient of this prestigious accolade?",
+        "A": "William Bradley Pitt",
+        "B": "Romain Dauriac",
+        "C": "Lauren Shuler Donner",
+        "D": "Tupac Amaru Shakur",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Academy Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            34,
+            8,
+            40
+        ],
+        "page_ranks": [
+            12.91,
+            2.84,
+            16.45
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.06,
+            0.07,
+            -0.06
+        ],
+        "quintuple": [
+            "William Bradley Pitt",
+            "Person",
+            "RECIPIENT_OF",
+            "->",
+            "Academy Award",
+            "Award",
+            "NOMINATED",
+            "<-",
+            "John Christopher Depp II",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which actor, who starred in the film \"Bullet Train,\" received the same prestigious British award as Leonardo DiCaprio?",
+        "A": "Donald Trump",
+        "B": "William Bradley Pitt",
+        "C": "Birdman",
+        "D": "Paris Hilton",
+        "correct_answer": "B",
+        "hidden_middle_entity": "British Academy Film Award",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            10,
+            4,
+            34,
+            1
+        ],
+        "page_ranks": [
+            3.89,
+            1.46,
+            12.91,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            0.02,
+            0.01
+        ],
+        "quintuple": [
+            "Leonardo Wilhelm DiCaprio",
+            "Person",
+            "RECIPIENT",
+            "->",
+            "British Academy Film Award",
+            "Award",
+            "RECIPIENT_OF",
+            "<-",
+            "William Bradley Pitt",
+            "Person"
+        ],
+        "helper_triple": [
+            "William Bradley Pitt",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Bullet Train",
+            "Film"
+        ],
+        "valid": true
+    }
+]

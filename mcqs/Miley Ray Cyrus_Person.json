@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who famously released the hit song \"Wrecking Ball\"?",
+        "A": "Miley Ray Cyrus",
+        "B": "Romain Dauriac",
+        "C": "Paris Hilton",
+        "D": "Tyga",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            42,
+            1
+        ],
+        "page_ranks": [
+            16.13,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.07,
+            -0.01,
+            0.04
+        ],
+        "triple": [
+            "Miley Ray Cyrus",
+            "Person",
+            "RELEASED",
+            "->",
+            "Wrecking Ball",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which artist, recognized for their high rankings by the RIAA, released the album \"Meet Miley Cyrus\"?",
+        "A": "Miley Ray Cyrus",
+        "B": "Elvis",
+        "C": "Snoop Dogg",
+        "D": "Phil Heath",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            42,
+            3
+        ],
+        "page_ranks": [
+            0.47,
+            16.13,
+            1.15
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            -0.09,
+            0.01
+        ],
+        "triple": [
+            "Miley Ray Cyrus",
+            "Person",
+            "RELEASED",
+            "->",
+            "Meet Miley Cyrus",
+            "Album"
+        ],
+        "helper_triple": [
+            "Miley Ray Cyrus",
+            "Person",
+            "RANKED_BY",
+            "->",
+            "RIAA",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which of these artists, known for their contributions to both music and television, shares a Grammy-winning status with the artist formerly known as Kanye West?",
+        "A": "Miley Ray Cyrus",
+        "B": "Sam Phillips",
+        "C": "Gray Davis",
+        "D": "Jonny Lee Miller",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Grammy Awards",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            42,
+            8,
+            46
+        ],
+        "page_ranks": [
+            16.13,
+            2.75,
+            18.52
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.08,
+            0.01,
+            0.02
+        ],
+        "quintuple": [
+            "Miley Ray Cyrus",
+            "Person",
+            "WON",
+            "->",
+            "Grammy Awards",
+            "Award",
+            "WON",
+            "<-",
+            "Ye",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which artist, who is signed with RCA Records, won a prestigious award for the song \"Flowers\"?",
+        "A": "Afeni Shakur",
+        "B": "Tupac Amaru Shakur",
+        "C": "Cassius Marcellus Clay Jr.",
+        "D": "Miley Ray Cyrus",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Grammy Awards",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            3,
+            8,
+            42,
+            1
+        ],
+        "page_ranks": [
+            1.17,
+            2.75,
+            16.13,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.09,
+            -0.08,
+            0.14
+        ],
+        "quintuple": [
+            "Flowers",
+            "Song",
+            "WON",
+            "->",
+            "Grammy Awards",
+            "Award",
+            "WON",
+            "<-",
+            "Miley Ray Cyrus",
+            "Person"
+        ],
+        "helper_triple": [
+            "Miley Ray Cyrus",
+            "Person",
+            "SIGNED_WITH",
+            "->",
+            "RCA Records",
+            "Organization"
+        ],
+        "valid": true
+    }
+]

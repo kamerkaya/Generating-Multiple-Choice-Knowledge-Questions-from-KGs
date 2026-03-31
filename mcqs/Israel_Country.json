@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Known as the capital city of an ancient land, Jerusalem is the administrative center of which country today?",
+        "A": "Iraq",
+        "B": "New Zealand",
+        "C": "Israel",
+        "D": "Denmark",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            1
+        ],
+        "page_ranks": [
+            14.5,
+            0.48
+        ],
+        "distractor_depths": [
+            2,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.41,
+            0.0,
+            -0.09
+        ],
+        "triple": [
+            "Israel",
+            "Country",
+            "CAPITAL",
+            "->",
+            "Jerusalem",
+            "City"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which country, located in the region known as the Land of Israel, has a border with the West Bank?",
+        "A": "East Germany",
+        "B": "South Africa",
+        "C": "Afghanistan",
+        "D": "Israel",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            37,
+            8
+        ],
+        "page_ranks": [
+            0.48,
+            14.5,
+            3.64
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.12,
+            0.0,
+            0.11
+        ],
+        "triple": [
+            "Israel",
+            "Country",
+            "BORDERS",
+            "->",
+            "West Bank",
+            "Region"
+        ],
+        "helper_triple": [
+            "Israel",
+            "Country",
+            "LOCATED_IN",
+            "->",
+            "Land Of Israel",
+            "Region"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which country's support is influenced by the public approval ratings measured by Gallup for a political figure?",
+        "A": "New Zealand",
+        "B": "Georgia",
+        "C": "West Germany",
+        "D": "Israel",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Joseph Robinette Biden Jr.",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            26,
+            1
+        ],
+        "page_ranks": [
+            14.5,
+            9.65,
+            0.46
+        ],
+        "distractor_depths": [
+            4,
+            3,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.0,
+            0.05,
+            -0.14
+        ],
+        "quintuple": [
+            "Israel",
+            "Country",
+            "SUPPORTED",
+            "<-",
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "APPROVAL_RATING",
+            "<-",
+            "Gallup",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which country that borders Lebanon was supported by the same person who signed the American Rescue Plan Act into law?",
+        "A": "Netherlands",
+        "B": "Lebanon",
+        "C": "Israel",
+        "D": "Korea",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Joseph Robinette Biden Jr.",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            26,
+            37,
+            1
+        ],
+        "page_ranks": [
+            0.46,
+            9.65,
+            14.5,
+            0.48
+        ],
+        "distractor_depths": [
+            4,
+            1,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.12,
+            0.99,
+            -0.06
+        ],
+        "quintuple": [
+            "American Rescue Plan Act",
+            "Legislation",
+            "SIGNED",
+            "<-",
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "SUPPORTED",
+            "->",
+            "Israel",
+            "Country"
+        ],
+        "helper_triple": [
+            "Israel",
+            "Country",
+            "BORDERS",
+            "->",
+            "Lebanon",
+            "Country"
+        ],
+        "valid": true
+    }
+]

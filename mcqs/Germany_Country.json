@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which country shares a border with Luxembourg?",
+        "A": "Maldives",
+        "B": "Serbia",
+        "C": "Germany",
+        "D": "Jordan",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            53,
+            2
+        ],
+        "page_ranks": [
+            18.29,
+            0.75
+        ],
+        "distractor_depths": [
+            4,
+            2,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.0,
+            0.17,
+            -0.14
+        ],
+        "triple": [
+            "Germany",
+            "Country",
+            "BORDERS",
+            "->",
+            "Luxembourg",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which country, located in Central Europe, shares a border with the Netherlands?",
+        "A": "Andorra",
+        "B": "Germany",
+        "C": "Republic of India",
+        "D": "Serbia",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            53,
+            1
+        ],
+        "page_ranks": [
+            0.44,
+            18.29,
+            0.44
+        ],
+        "distractor_depths": [
+            2,
+            4,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            0.41,
+            -0.0,
+            0.17
+        ],
+        "triple": [
+            "Germany",
+            "Country",
+            "BORDERS",
+            "->",
+            "Netherlands",
+            "Country"
+        ],
+        "helper_triple": [
+            "Germany",
+            "Country",
+            "LOCATED_IN",
+            "->",
+            "Central Europe",
+            "Region"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which country, like Japan, underwent an event following World War II that involved administration by foreign powers?",
+        "A": "Germany",
+        "B": "Soviet Russia",
+        "C": "Belgium",
+        "D": "Empire Of Japan",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Allied Occupation",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            53,
+            2,
+            23
+        ],
+        "page_ranks": [
+            18.29,
+            0.76,
+            8.64
+        ],
+        "distractor_depths": [
+            3,
+            1,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            0.89,
+            0.03
+        ],
+        "quintuple": [
+            "Germany",
+            "Country",
+            "FOLLOWED",
+            "<-",
+            "Allied Occupation",
+            "Event",
+            "UNDERWENT",
+            "<-",
+            "Japan",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Following the Allied Occupation, which country was led by a figure who initiated the Second World War?",
+        "A": "Germany",
+        "B": "British",
+        "C": "Switzerland",
+        "D": "Japan",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Adolf Hitler",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            24,
+            53,
+            2
+        ],
+        "page_ranks": [
+            0.77,
+            8.85,
+            18.29,
+            0.76
+        ],
+        "distractor_depths": [
+            3,
+            1,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.09,
+            0.77,
+            0.01
+        ],
+        "quintuple": [
+            "Second World War",
+            "Event",
+            "INITIATED",
+            "<-",
+            "Adolf Hitler",
+            "Person",
+            "LED_BY",
+            "<-",
+            "Germany",
+            "Country"
+        ],
+        "helper_triple": [
+            "Germany",
+            "Country",
+            "FOLLOWED",
+            "<-",
+            "Allied Occupation",
+            "Event"
+        ],
+        "valid": true
+    }
+]

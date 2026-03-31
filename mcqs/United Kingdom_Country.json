@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "The only country where English is the official language and its capital is London is what?",
+        "A": "Romania",
+        "B": "United Kingdom",
+        "C": "Syria",
+        "D": "Ukraine",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            28,
+            3
+        ],
+        "page_ranks": [
+            9.18,
+            1.04
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            -0.02,
+            0.08
+        ],
+        "triple": [
+            "United Kingdom",
+            "Country",
+            "OFFICIAL_LANGUAGE",
+            "->",
+            "English",
+            "Language"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In what country, which includes Northern Ireland as part of its territory, did Winston Churchill serve as Prime Minister?",
+        "A": "Ceylon",
+        "B": "United Kingdom",
+        "C": "Jordan",
+        "D": "State Of Israel",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            16,
+            28,
+            3
+        ],
+        "page_ranks": [
+            6.24,
+            9.18,
+            1.16
+        ],
+        "distractor_depths": [
+            2,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.2,
+            -0.02,
+            -0.02
+        ],
+        "triple": [
+            "United Kingdom",
+            "Country",
+            "PRIME_MINISTER",
+            "<-",
+            "Winston Churchill",
+            "Person"
+        ],
+        "helper_triple": [
+            "United Kingdom",
+            "Country",
+            "INCLUDES",
+            "->",
+            "Northern Ireland",
+            "Place"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which country declared war on a nation that was subjected to the Treaty of Versailles?",
+        "A": "United Kingdom",
+        "B": "East Germany",
+        "C": "Syria",
+        "D": "Singapore",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Germany",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            28,
+            53,
+            3
+        ],
+        "page_ranks": [
+            9.18,
+            18.29,
+            1.15
+        ],
+        "distractor_depths": [
+            2,
+            5,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            0.25,
+            -0.02,
+            0.17
+        ],
+        "quintuple": [
+            "United Kingdom",
+            "Country",
+            "DECLARED_WAR",
+            "->",
+            "Germany",
+            "Country",
+            "IMPOSED_ON",
+            "<-",
+            "Treaty of Versailles",
+            "Agreement"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which former colonial power, whose member countries include those in the G7, is connected to the Atlantic Ocean through a country that gained independence from it?",
+        "A": "Bulgaria",
+        "B": "Greece",
+        "C": "Rome",
+        "D": "United Kingdom",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Canada",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            25,
+            28,
+            3
+        ],
+        "page_ranks": [
+            0.46,
+            9.11,
+            9.18,
+            1.05
+        ],
+        "distractor_depths": [
+            3,
+            3,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            0.03,
+            0.3
+        ],
+        "quintuple": [
+            "Atlantic Ocean",
+            "Ocean",
+            "BORDER",
+            "<-",
+            "Canada",
+            "Country",
+            "INDEPENDENCE_FROM",
+            "->",
+            "United Kingdom",
+            "Country"
+        ],
+        "helper_triple": [
+            "United Kingdom",
+            "Country",
+            "MEMBER_OF",
+            "->",
+            "G7",
+            "Organization"
+        ],
+        "valid": true
+    }
+]

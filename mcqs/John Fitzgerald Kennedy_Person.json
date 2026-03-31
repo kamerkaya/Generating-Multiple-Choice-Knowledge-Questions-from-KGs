@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which historical figure joined the U.S. Naval Reserve before becoming a prominent political leader in the United States?",
+        "A": "John Fitzgerald Kennedy",
+        "B": "Stamford Raffles",
+        "C": "Zachary Taylor",
+        "D": "Abraham Lincoln",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            1
+        ],
+        "page_ranks": [
+            15.19,
+            0.5
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.11,
+            -0.05,
+            0.14
+        ],
+        "triple": [
+            "John Fitzgerald Kennedy",
+            "Person",
+            "JOINED",
+            "->",
+            "U.S. Naval Reserve",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which historical figure, known for establishing the Peace Corps, was assassinated in Dallas?",
+        "A": "Ho Chi Minh",
+        "B": "John Fitzgerald Kennedy",
+        "C": "Abraham Lincoln",
+        "D": "Diana",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            37,
+            1
+        ],
+        "page_ranks": [
+            0.5,
+            15.19,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            0.14,
+            -0.11
+        ],
+        "triple": [
+            "John Fitzgerald Kennedy",
+            "Person",
+            "ASSASSINATED_IN",
+            "->",
+            "Dallas",
+            "City"
+        ],
+        "helper_triple": [
+            "John Fitzgerald Kennedy",
+            "Person",
+            "ESTABLISHED",
+            "->",
+            "Peace Corps",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which historical figure operated a type of naval vessel known as PT boats during a major 20th-century conflict?",
+        "A": "John Fitzgerald Kennedy",
+        "B": "John McCain",
+        "C": "Jack Ruby",
+        "D": "Kim Jong Un",
+        "correct_answer": "A",
+        "hidden_middle_entity": "World War II",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            17,
+            1
+        ],
+        "page_ranks": [
+            15.19,
+            5.4,
+            0.42
+        ],
+        "distractor_depths": [
+            4,
+            2,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.09,
+            0.57,
+            -0.09
+        ],
+        "quintuple": [
+            "John Fitzgerald Kennedy",
+            "Person",
+            "PARTICIPATED_IN",
+            "->",
+            "World War II",
+            "Event",
+            "INVOLVED_EQUIPMENT",
+            "->",
+            "Pt Boats",
+            "Military equipment"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which influential political figure, who represented Massachusetts and became involved in tensions that arose after World War II, is known for his significant role at the height of geopolitical rivalries in the 20th century?",
+        "A": "John Fitzgerald Kennedy",
+        "B": "Andrew",
+        "C": "Joseph Robinette Biden Jr.",
+        "D": "Robert Bork",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Cold War",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            17,
+            5,
+            37,
+            1
+        ],
+        "page_ranks": [
+            5.4,
+            1.67,
+            15.19,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.09,
+            -0.01,
+            -0.0
+        ],
+        "quintuple": [
+            "World War II",
+            "Event",
+            "LED_TO",
+            "->",
+            "Cold War",
+            "Event",
+            "INVOLVED_IN",
+            "<-",
+            "John Fitzgerald Kennedy",
+            "Person"
+        ],
+        "helper_triple": [
+            "John Fitzgerald Kennedy",
+            "Person",
+            "REPRESENTED",
+            "->",
+            "Massachusetts",
+            "State"
+        ],
+        "valid": true
+    }
+]

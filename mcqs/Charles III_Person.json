@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Married in a civil ceremony at Windsor Guildhall in 2005, who is the spouse of Camilla Parker Bowles?",
+        "A": "Selena Marie Gomez",
+        "B": "Mary Lincoln",
+        "C": "Eva Braun",
+        "D": "Charles III",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            27,
+            1
+        ],
+        "page_ranks": [
+            10.25,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.11,
+            -0.08,
+            -0.0
+        ],
+        "triple": [
+            "Charles III",
+            "Person",
+            "MARRIED_TO",
+            "->",
+            "Camilla Parker Bowles",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What author of 17 books succeeded Elizabeth II as a reigning monarch?",
+        "A": "Kimberly Noel Kardashian",
+        "B": "Charles III",
+        "C": "James A. Garfield",
+        "D": "Barack Obama",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            49,
+            27,
+            1
+        ],
+        "page_ranks": [
+            17.73,
+            10.25,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            0.02,
+            0.03
+        ],
+        "triple": [
+            "Charles III",
+            "Person",
+            "SUCCEEDED_BY",
+            "<-",
+            "Elizabeth II",
+            "Person"
+        ],
+        "helper_triple": [
+            "Charles III",
+            "Person",
+            "AUTHOR_OF",
+            "->",
+            "17 Books",
+            "Concept"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which British royal, whose mother-in-law was Queen Elizabeth II, was married to the individual often referred to as the “People’s Princess”?",
+        "A": "Charles III",
+        "B": "Stephen A. Douglas",
+        "C": "Stephen William Hawking",
+        "D": "Kaiser Wilhelm II",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Diana Princess of Wales",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            27,
+            16,
+            49
+        ],
+        "page_ranks": [
+            10.25,
+            6.03,
+            17.73
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.08,
+            0.02,
+            0.03
+        ],
+        "quintuple": [
+            "Charles III",
+            "Person",
+            "SPOUSE",
+            "<-",
+            "Diana Princess of Wales",
+            "Person",
+            "MOTHER_IN_LAW",
+            "->",
+            "Elizabeth II",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who is the paternal grandfather of King George VI’s grandson, who is also the parent of William?",
+        "A": "Charles III",
+        "B": "Willard Carroll Smith II",
+        "C": "Eminem",
+        "D": "Robert Bork",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Diana Princess of Wales",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            16,
+            27,
+            6
+        ],
+        "page_ranks": [
+            0.79,
+            6.03,
+            10.25,
+            1.98
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.03,
+            -0.05,
+            0.06
+        ],
+        "quintuple": [
+            "William",
+            "Person",
+            "PARENT",
+            "<-",
+            "Diana Princess of Wales",
+            "Person",
+            "SPOUSE",
+            "->",
+            "Charles III",
+            "Person"
+        ],
+        "helper_triple": [
+            "Charles III",
+            "Person",
+            "GRANDFATHER",
+            "->",
+            "King George VI",
+            "Person"
+        ],
+        "valid": true
+    }
+]

@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who is the artist known for receiving two Golden Globe Awards, in addition to being a renowned figure in the music and entertainment industry?",
+        "A": "Lady Gaga",
+        "B": "Destiny Hope Cyrus",
+        "C": "Billy Bob Thornton",
+        "D": "D.J. Fontana",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            27,
+            1
+        ],
+        "page_ranks": [
+            10.25,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            -0.1,
+            0.01
+        ],
+        "triple": [
+            "Lady Gaga",
+            "Person",
+            "RECEIVED",
+            "->",
+            "Two Golden Globe Awards",
+            "Award"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which celebrity, known for their role in \"House Of Gucci,\" founded the \"Born This Way Foundation\"?",
+        "A": "John Lennon",
+        "B": "Avi Arad",
+        "C": "Lady Gaga",
+        "D": "Jada Pinkett Smith",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            27,
+            1
+        ],
+        "page_ranks": [
+            0.47,
+            10.25,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.07,
+            0.06,
+            -0.07
+        ],
+        "triple": [
+            "Lady Gaga",
+            "Person",
+            "FOUNDED",
+            "->",
+            "Born This Way Foundation",
+            "Organization"
+        ],
+        "helper_triple": [
+            "Lady Gaga",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "House Of Gucci",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who is the artist behind the hit song \"Telephone\"?",
+        "A": "Hillary Clinton",
+        "B": "Neil Patrick Harris",
+        "C": "Lady Gaga",
+        "D": "2Pac",
+        "correct_answer": "C",
+        "hidden_middle_entity": "The Fame Monster",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            27,
+            4,
+            1
+        ],
+        "page_ranks": [
+            10.25,
+            1.83,
+            0.54
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            0.1,
+            0.06
+        ],
+        "quintuple": [
+            "Lady Gaga",
+            "Person",
+            "RELEASED",
+            "->",
+            "The Fame Monster",
+            "Album",
+            "INCLUDES",
+            "->",
+            "Telephone",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which global music icon, known for releasing another successful album titled \"Artpop,\" achieved the milestone of selling 1 million copies of their album in its first week?",
+        "A": "Lady Gaga",
+        "B": "Billy Ray Cyrus",
+        "C": "Amy Pascal",
+        "D": "Freddie Mercury",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Born This Way",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            3,
+            27,
+            1
+        ],
+        "page_ranks": [
+            0.54,
+            1.38,
+            10.25,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.06,
+            0.11
+        ],
+        "quintuple": [
+            "1 Million",
+            "Quantity",
+            "SOLD_IN_FIRST_WEEK",
+            "<-",
+            "Born This Way",
+            "Album",
+            "RELEASED",
+            "<-",
+            "Lady Gaga",
+            "Person"
+        ],
+        "helper_triple": [
+            "Lady Gaga",
+            "Person",
+            "RELEASED",
+            "->",
+            "Artpop",
+            "Album"
+        ],
+        "valid": true
+    }
+]

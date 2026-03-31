@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the action-packed 1985 film \"Commando,\" which actor took on the iconic role of John Matrix?",
+        "A": "Cruz Bustamante",
+        "B": "Michael Shea",
+        "C": "Neil Patrick Harris",
+        "D": "Arnold Alois Schwarzenegger",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            32,
+            1
+        ],
+        "page_ranks": [
+            13.38,
+            0.5
+        ],
+        "distractor_depths": [
+            1,
+            3,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.99,
+            0.06,
+            0.06
+        ],
+        "triple": [
+            "Arnold Alois Schwarzenegger",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "Commando",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Known as \"The Austrian Oak,\" who served as the 38th Governor of California?",
+        "A": "William McKinley",
+        "B": "Louis XIV",
+        "C": "Arnold Alois Schwarzenegger",
+        "D": "Gray Davis",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            32,
+            1
+        ],
+        "page_ranks": [
+            0.5,
+            13.38,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            1
+        ],
+        "node_embedding_similarity_scores": [
+            0.09,
+            0.02,
+            0.99
+        ],
+        "triple": [
+            "Arnold Alois Schwarzenegger",
+            "Person",
+            "HAS_NICKNAME",
+            "->",
+            "Austrian Oak",
+            "Nickname"
+        ],
+        "helper_triple": [
+            "Arnold Alois Schwarzenegger",
+            "Person",
+            "HELD_POSITION",
+            "->",
+            "38th Governor of California",
+            "Political position"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "This former professional bodybuilder and actor, who served as the Governor of California, is a prominent member of a US political party closely associated with the United States of America. Who is he?",
+        "A": "Dr. Dre",
+        "B": "Onika Tanya Maraj-Petty",
+        "C": "Andrew",
+        "D": "Arnold Alois Schwarzenegger",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Republican Party",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            32,
+            3,
+            21
+        ],
+        "page_ranks": [
+            13.38,
+            1.11,
+            7.6
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.14,
+            0.04,
+            0.05
+        ],
+        "quintuple": [
+            "Arnold Alois Schwarzenegger",
+            "Person",
+            "MEMBER_OF",
+            "->",
+            "Republican Party",
+            "Political party",
+            "HAS_POLITICAL_PARTY",
+            "<-",
+            "United States of America",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which bodybuilder, also known for winning the Mr. Universe title, shares a prestigious bodybuilding title with Lee Haney?",
+        "A": "Dwayne Douglas Johnson",
+        "B": "Grover Cleveland",
+        "C": "Bruce Lee",
+        "D": "Arnold Alois Schwarzenegger",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Mr Olympia",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            3,
+            32,
+            1
+        ],
+        "page_ranks": [
+            0.56,
+            1.44,
+            13.38,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.06,
+            0.09,
+            -0.02
+        ],
+        "quintuple": [
+            "Lee Haney",
+            "Person",
+            "WON_TITLE",
+            "->",
+            "Mr Olympia",
+            "Title",
+            "WON_TITLE",
+            "<-",
+            "Arnold Alois Schwarzenegger",
+            "Person"
+        ],
+        "helper_triple": [
+            "Arnold Alois Schwarzenegger",
+            "Person",
+            "WON_TITLE",
+            "->",
+            "Mr Universe",
+            "Title"
+        ],
+        "valid": true
+    }
+]

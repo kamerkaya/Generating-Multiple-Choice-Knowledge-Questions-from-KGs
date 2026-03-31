@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which legendary NFL quarterback holds the record for achieving 10 Super Bowl appearances?",
+        "A": "Stefani Joanne Angelina Germanotta",
+        "B": "Child With Jost",
+        "C": "Pamela Fryman",
+        "D": "Thomas Edward Patrick Brady Jr.",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            45,
+            1
+        ],
+        "page_ranks": [
+            19.67,
+            0.52
+        ],
+        "distractor_depths": [
+            3,
+            3,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            -0.05,
+            0.08
+        ],
+        "triple": [
+            "Thomas Edward Patrick Brady Jr.",
+            "Person",
+            "ACHIEVED",
+            "->",
+            "10 Super Bowl Appearances",
+            "Achievement"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which former New England Patriots player holds the record as the NFL leader in quarterback regular season wins?",
+        "A": "Selena Marie Gomez",
+        "B": "Ryan Reynolds",
+        "C": "Thomas Edward Patrick Brady Jr.",
+        "D": "Arnold Alois Schwarzenegger",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            45,
+            1
+        ],
+        "page_ranks": [
+            0.52,
+            19.67,
+            0.52
+        ],
+        "distractor_depths": [
+            4,
+            3,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            0.08,
+            -0.1,
+            0.05
+        ],
+        "triple": [
+            "Thomas Edward Patrick Brady Jr.",
+            "Person",
+            "HOLDS",
+            "->",
+            "NFL Leader in Quarterback Regular Season Wins",
+            "Record"
+        ],
+        "helper_triple": [
+            "Thomas Edward Patrick Brady Jr.",
+            "Person",
+            "PLAYED_FOR",
+            "->",
+            "New England Patriots",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Sharing a nationality with Jennifer Aniston, who is this renowned athlete and celebrated quarterback credited with achieving unprecedented success in American football?",
+        "A": "Thomas Edward Patrick Brady Jr.",
+        "B": "Joe Russo",
+        "C": "Taylor Alison Swift",
+        "D": "Doja Cat",
+        "correct_answer": "A",
+        "hidden_middle_entity": "American",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            45,
+            12,
+            29
+        ],
+        "page_ranks": [
+            19.67,
+            4.24,
+            11.31
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.09,
+            -0.02,
+            -0.04
+        ],
+        "quintuple": [
+            "Thomas Edward Patrick Brady Jr.",
+            "Person",
+            "HAS_NATIONALITY",
+            "->",
+            "American",
+            "Nationality",
+            "NATIONALITY",
+            "<-",
+            "Jennifer Joanna Aniston",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "An acclaimed American sitcom shares its nationality with the individual often hailed as the Greatest Quarterback Of All Time. Who is this person?",
+        "A": "Chris Rock",
+        "B": "Thomas Edward Patrick Brady Jr.",
+        "C": "Kim Kardashian",
+        "D": "Ringo Starr",
+        "correct_answer": "B",
+        "hidden_middle_entity": "American",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            12,
+            12,
+            45,
+            1
+        ],
+        "page_ranks": [
+            5.01,
+            4.24,
+            19.67,
+            0.52
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.01,
+            -0.12
+        ],
+        "quintuple": [
+            "How I Met Your Mother",
+            "Television show",
+            "NATIONALITY",
+            "->",
+            "American",
+            "Nationality",
+            "HAS_NATIONALITY",
+            "<-",
+            "Thomas Edward Patrick Brady Jr.",
+            "Person"
+        ],
+        "helper_triple": [
+            "Thomas Edward Patrick Brady Jr.",
+            "Person",
+            "REGARDED_AS",
+            "->",
+            "Greatest Quarterback Of All Time",
+            "Title"
+        ],
+        "valid": true
+    }
+]

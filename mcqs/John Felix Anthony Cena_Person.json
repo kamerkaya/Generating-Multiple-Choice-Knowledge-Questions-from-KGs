@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which celebrity holds the record for fulfilling the highest number of wishes through the Make-a-Wish Foundation?",
+        "A": "Doja Cat",
+        "B": "Dwayne Douglas Johnson",
+        "C": "John Felix Anthony Cena",
+        "D": "Sharon Tate",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            1
+        ],
+        "page_ranks": [
+            11.38,
+            0.52
+        ],
+        "distractor_depths": [
+            5,
+            2,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.08,
+            0.14,
+            0.02
+        ],
+        "triple": [
+            "John Felix Anthony Cena",
+            "Person",
+            "INVOLVED_IN",
+            "->",
+            "Make-a-Wish Foundation",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which professional wrestler, known for being tied with Ric Flair for the world champion record, got his start in an organization called Ohio Valley Wrestling?",
+        "A": "Zachary Taylor",
+        "B": "Lionel Messi",
+        "C": "Bobby Beausoleil",
+        "D": "John Felix Anthony Cena",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            26,
+            1
+        ],
+        "page_ranks": [
+            0.52,
+            11.38,
+            0.52
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.11,
+            -0.11,
+            0.01
+        ],
+        "triple": [
+            "John Felix Anthony Cena",
+            "Person",
+            "EQUAL_WORLD_CHAMPION_RECORD",
+            "->",
+            "Ric Flair",
+            "Person"
+        ],
+        "helper_triple": [
+            "John Felix Anthony Cena",
+            "Person",
+            "ASSIGNED_TO",
+            "->",
+            "Ohio Valley Wrestling",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which person, known for their wrestling career, shares a residence history with a prominent tech CEO known for electric vehicles?",
+        "A": "Lionel Andrés Messi",
+        "B": "Dwayne Douglas Johnson",
+        "C": "Lionel Messi",
+        "D": "John Felix Anthony Cena",
+        "correct_answer": "D",
+        "hidden_middle_entity": "California",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            3,
+            18
+        ],
+        "page_ranks": [
+            11.38,
+            1.16,
+            6.52
+        ],
+        "distractor_depths": [
+            4,
+            2,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            0.14,
+            -0.11
+        ],
+        "quintuple": [
+            "John Felix Anthony Cena",
+            "Person",
+            "MOVED_TO",
+            "->",
+            "California",
+            "Location",
+            "MOVED_TO",
+            "<-",
+            "Elon Reeve Musk",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which individual, who once triumphed in the OVW Southern Tag Team Championship, relocated to the same state as Elon Reeve Musk?",
+        "A": "Karim Benzema",
+        "B": "Lionel Andrés Messi",
+        "C": "Jaz-O",
+        "D": "John Felix Anthony Cena",
+        "correct_answer": "D",
+        "hidden_middle_entity": "California",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            18,
+            3,
+            26,
+            1
+        ],
+        "page_ranks": [
+            6.52,
+            1.16,
+            11.38,
+            0.52
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.11,
+            -0.04,
+            0.05
+        ],
+        "quintuple": [
+            "Elon Reeve Musk",
+            "Person",
+            "MOVED_TO",
+            "->",
+            "California",
+            "Location",
+            "MOVED_TO",
+            "<-",
+            "John Felix Anthony Cena",
+            "Person"
+        ],
+        "helper_triple": [
+            "John Felix Anthony Cena",
+            "Person",
+            "WON",
+            "->",
+            "OVW Southern Tag Team Championship",
+            "Title"
+        ],
+        "valid": true
+    }
+]

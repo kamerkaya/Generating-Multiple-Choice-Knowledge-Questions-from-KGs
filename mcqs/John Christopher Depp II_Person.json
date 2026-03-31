@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In Tim Burton's film \"Sleepy Hollow,\" who portrayed the character Ichabod Crane?",
+        "A": "John Christopher Depp II",
+        "B": "Jeffrey Lionel Dahmer",
+        "C": "Destiny Hope Cyrus",
+        "D": "Michael Shea",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            40,
+            1
+        ],
+        "page_ranks": [
+            16.45,
+            0.49
+        ],
+        "distractor_depths": [
+            4,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            -0.03,
+            0.12
+        ],
+        "triple": [
+            "John Christopher Depp II",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Sleepy Hollow",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Starring in films like \"Minamata\" and \"Edward Scissorhands,\" who is the actor known for portraying eccentric characters in movies?",
+        "A": "Dj Jazzy Jeff",
+        "B": "Destiny Hope Cyrus",
+        "C": "Robyn Rihanna Fenty",
+        "D": "John Christopher Depp II",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            40,
+            1
+        ],
+        "page_ranks": [
+            0.49,
+            16.45,
+            0.49
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.02,
+            -0.03,
+            -0.03
+        ],
+        "triple": [
+            "John Christopher Depp II",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Minamata",
+            "Film"
+        ],
+        "helper_triple": [
+            "John Christopher Depp II",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Edward Scissorhands",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which person founded a band that includes Alice Cooper as a member?",
+        "A": "Marshall Bruce Mathers III",
+        "B": "Taylor Alison Swift",
+        "C": "John Christopher Depp II",
+        "D": "Jon Voight",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Hollywood Vampires",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            40,
+            3,
+            1
+        ],
+        "page_ranks": [
+            16.45,
+            1.43,
+            0.55
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            -0.0,
+            -0.01
+        ],
+        "quintuple": [
+            "John Christopher Depp II",
+            "Person",
+            "FORMED",
+            "->",
+            "Hollywood Vampires",
+            "Band",
+            "MEMBER",
+            "->",
+            "Alice Cooper",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which famous actor, known for being nominated for an Academy Award, shares a prestigious award with Willard Carroll Smith II?",
+        "A": "Kevin Feige",
+        "B": "Ty Dolla Sign",
+        "C": "John Christopher Depp II",
+        "D": "Ye",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Golden Globe Award",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            35,
+            8,
+            40,
+            8
+        ],
+        "page_ranks": [
+            14.56,
+            2.85,
+            16.45,
+            2.84
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.03,
+            -0.07,
+            -0.07
+        ],
+        "quintuple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "RECEIVED",
+            "->",
+            "Golden Globe Award",
+            "Award",
+            "RECIPIENT",
+            "<-",
+            "John Christopher Depp II",
+            "Person"
+        ],
+        "helper_triple": [
+            "John Christopher Depp II",
+            "Person",
+            "NOMINATED",
+            "->",
+            "Academy Award",
+            "Award"
+        ],
+        "valid": true
+    }
+]

@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who played the leading role in the 2008 film \"Seven Pounds\"?",
+        "A": "Kareem Abdul-Jabbar",
+        "B": "Kim Kardashian",
+        "C": "Karim Benzema",
+        "D": "Willard Carroll Smith II",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            35,
+            1
+        ],
+        "page_ranks": [
+            14.56,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.02,
+            0.06,
+            -0.08
+        ],
+        "triple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "Seven Pounds",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which actor, known for receiving a BAFTA Award, starred in the film \"Men In Black\"?",
+        "A": "Willard Carroll Smith II",
+        "B": "Neil Patrick Harris",
+        "C": "Rob Greenberg",
+        "D": "Anne",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            35,
+            1
+        ],
+        "page_ranks": [
+            0.5,
+            14.56,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            0.04,
+            0.02
+        ],
+        "triple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "Men In Black",
+            "Film"
+        ],
+        "helper_triple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "RECEIVED",
+            "->",
+            "BAFTA Award",
+            "Award"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who holds an award in common with John Christopher Depp II?",
+        "A": "Billy Ray Cyrus",
+        "B": "Michael Shea",
+        "C": "John Lennon",
+        "D": "Willard Carroll Smith II",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Golden Globe Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            35,
+            8,
+            40
+        ],
+        "page_ranks": [
+            14.56,
+            2.85,
+            16.45
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            0.04,
+            0.02
+        ],
+        "quintuple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "RECEIVED",
+            "->",
+            "Golden Globe Award",
+            "Award",
+            "RECIPIENT",
+            "<-",
+            "John Christopher Depp II",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which of these actors, known for starring in the film \"I, Robot,\" has also received a nomination for the same prestigious award for which Johnny Depp was nominated?",
+        "A": "Jaz-O",
+        "B": "Willard Carroll Smith II",
+        "C": "George Foreman",
+        "D": "Lionel Andrés Messi",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Academy Award",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            40,
+            8,
+            35,
+            1
+        ],
+        "page_ranks": [
+            16.45,
+            2.84,
+            14.56,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            0.05,
+            0.08
+        ],
+        "quintuple": [
+            "John Christopher Depp II",
+            "Person",
+            "NOMINATED",
+            "->",
+            "Academy Award",
+            "Award",
+            "RECEIVED",
+            "<-",
+            "Willard Carroll Smith II",
+            "Person"
+        ],
+        "helper_triple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "I Robot",
+            "Film"
+        ],
+        "valid": true
+    }
+]

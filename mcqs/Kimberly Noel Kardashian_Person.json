@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the mid-2000s, which socialite and media personality gained widespread attention due to a leaked personal video featuring them and Ray J?",
+        "A": "Kimberly Noel Kardashian",
+        "B": "Nicki Minaj",
+        "C": "6Ix9Ine",
+        "D": "Paris Hilton",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            1
+        ],
+        "page_ranks": [
+            11.07,
+            0.51
+        ],
+        "distractor_depths": [
+            4,
+            5,
+            1
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            -0.08,
+            1.0
+        ],
+        "triple": [
+            "Kimberly Noel Kardashian",
+            "Person",
+            "RELATIONSHIP",
+            "->",
+            "Ray J",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In 2023, who shocked viewers by taking on a role in \"American Horror Story,\" despite being best known for appearing in reality TV shows such as \"Kourtney And Kim Take Miami\"?",
+        "A": "Kimberly Noel Kardashian",
+        "B": "Winston Churchill",
+        "C": "Richard Nixon",
+        "D": "Charles III",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            26,
+            1
+        ],
+        "page_ranks": [
+            0.51,
+            11.07,
+            0.51
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            -0.1,
+            0.05
+        ],
+        "triple": [
+            "Kimberly Noel Kardashian",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "American Horror Story",
+            "Television series"
+        ],
+        "helper_triple": [
+            "Kimberly Noel Kardashian",
+            "Person",
+            "APPEARED_IN",
+            "->",
+            "Kourtney And Kim Take Miami",
+            "Television series"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Recognized as a leading figure by a prestigious publication, who shares this honor with Justin Drew Bieber in being named influential in their respective fields?",
+        "A": "Kimberly Noel Kardashian",
+        "B": "Elizabeth II",
+        "C": "Sylvester Stallone",
+        "D": "Destiny Hope Cyrus",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Forbes",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            7,
+            31
+        ],
+        "page_ranks": [
+            11.07,
+            2.46,
+            11.49
+        ],
+        "distractor_depths": [
+            4,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.05,
+            -0.05,
+            -0.02
+        ],
+        "quintuple": [
+            "Kimberly Noel Kardashian",
+            "Person",
+            "RECOGNIZED_BY",
+            "->",
+            "Forbes",
+            "Organization",
+            "NAMED_POWERFUL",
+            "->",
+            "Justin Drew Bieber",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which socialite and entrepreneur, who co-founded the clothing store Dash, was recognized by the same organization that deemed Justin Bieber as powerful?",
+        "A": "Snoop Dogg",
+        "B": "Duchess of York",
+        "C": "Kimberly Noel Kardashian",
+        "D": "Leonardo Wilhelm DiCaprio",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Forbes",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            31,
+            7,
+            26,
+            1
+        ],
+        "page_ranks": [
+            11.49,
+            2.46,
+            11.07,
+            0.51
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            0.01,
+            -0.07
+        ],
+        "quintuple": [
+            "Justin Drew Bieber",
+            "Person",
+            "NAMED_POWERFUL",
+            "<-",
+            "Forbes",
+            "Organization",
+            "RECOGNIZED_BY",
+            "<-",
+            "Kimberly Noel Kardashian",
+            "Person"
+        ],
+        "helper_triple": [
+            "Kimberly Noel Kardashian",
+            "Person",
+            "FOUNDED",
+            "->",
+            "Dash",
+            "Business"
+        ],
+        "valid": true
+    }
+]

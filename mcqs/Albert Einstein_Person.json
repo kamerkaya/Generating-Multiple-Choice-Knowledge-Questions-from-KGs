@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Born in the German Empire, which theoretical physicist revolutionized our understanding of space, time, and energy with his theory of relativity?",
+        "A": "Albert Einstein",
+        "B": "Elon Reeve Musk",
+        "C": "Lionel Andrés Messi",
+        "D": "Eva Braun",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            35,
+            1
+        ],
+        "page_ranks": [
+            13.96,
+            0.49
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            -0.1,
+            0.4
+        ],
+        "triple": [
+            "Albert Einstein",
+            "Person",
+            "BORN_IN",
+            "->",
+            "German Empire",
+            "Place"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Renowned for developing the Theory of Relativity, which influential physicist's work has been particularly beneficial to the field of Quantum Optics?",
+        "A": "Dennis Wilson",
+        "B": "Stephen William Hawking",
+        "C": "Albert Einstein",
+        "D": "Karim Benzema",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            35,
+            1
+        ],
+        "page_ranks": [
+            0.49,
+            13.96,
+            0.49
+        ],
+        "distractor_depths": [
+            5,
+            2,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.05,
+            -0.04
+        ],
+        "triple": [
+            "Albert Einstein",
+            "Person",
+            "BENEFICIAL_TO",
+            "->",
+            "Quantum Optics",
+            "Concept"
+        ],
+        "helper_triple": [
+            "Albert Einstein",
+            "Person",
+            "DEVELOPED",
+            "->",
+            "Theory Of Relativity",
+            "Concept"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "A renowned physicist, who played a significant role in advising on a project that ultimately impacted a country involved in a major 20th-century global conflict, is most famously known by what name?",
+        "A": "Thomas Jefferson",
+        "B": "Nicki Minaj",
+        "C": "Albert Einstein",
+        "D": "Hillary Clinton",
+        "correct_answer": "C",
+        "hidden_middle_entity": "World War II",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            35,
+            17,
+            23
+        ],
+        "page_ranks": [
+            13.96,
+            5.4,
+            8.64
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            -0.03,
+            0.17
+        ],
+        "quintuple": [
+            "Albert Einstein",
+            "Person",
+            "CONTEXT_OF",
+            "->",
+            "World War II",
+            "Event",
+            "PARTICIPANT",
+            "->",
+            "Japan",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What influential physicist, known for proposing the General Theory of Relativity, was an outspoken critic of a political leader who participated in World War I?",
+        "A": "Albert Einstein",
+        "B": "Chuck Norris",
+        "C": "Prince Philip",
+        "D": "Richard Nixon",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Adolf Hitler",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            26,
+            24,
+            35,
+            2
+        ],
+        "page_ranks": [
+            9.32,
+            8.85,
+            13.96,
+            0.95
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.09,
+            -0.04,
+            0.11
+        ],
+        "quintuple": [
+            "World War I",
+            "Event",
+            "PARTICIPATED_IN",
+            "<-",
+            "Adolf Hitler",
+            "Person",
+            "OPPOSED",
+            "<-",
+            "Albert Einstein",
+            "Person"
+        ],
+        "helper_triple": [
+            "Albert Einstein",
+            "Person",
+            "PROPOSED",
+            "->",
+            "General Theory of Relativity",
+            "Concept"
+        ],
+        "valid": true
+    }
+]

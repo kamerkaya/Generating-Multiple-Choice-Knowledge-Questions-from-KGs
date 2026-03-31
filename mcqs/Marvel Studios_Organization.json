@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which organization is credited with producing the film \"Doctor Strange in the Multiverse of Madness\"?",
+        "A": "Marvel Studios",
+        "B": "Valhalla Motion Pictures",
+        "C": "Agbo",
+        "D": "Def Jam Recordings",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            49,
+            1
+        ],
+        "page_ranks": [
+            20.4,
+            0.5
+        ],
+        "distractor_depths": [
+            2,
+            2,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.54,
+            0.55,
+            -0.07
+        ],
+        "triple": [
+            "Marvel Studios",
+            "Organization",
+            "PRODUCED_BY",
+            "<-",
+            "Doctor Strange In The Multiverse Of Madness",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What organization is credited with producing both the film \"Doctor Strange\" and \"Iron Man 2\"?",
+        "A": "Marvel Studios",
+        "B": "Nation Of Islam",
+        "C": "Billboard",
+        "D": "Michigan Wolverines",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            49,
+            2
+        ],
+        "page_ranks": [
+            0.5,
+            20.4,
+            0.82
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            0.04,
+            -0.08
+        ],
+        "triple": [
+            "Marvel Studios",
+            "Organization",
+            "PRODUCED_BY",
+            "<-",
+            "Doctor Strange",
+            "Film"
+        ],
+        "helper_triple": [
+            "Marvel Studios",
+            "Organization",
+            "PRODUCED_BY",
+            "<-",
+            "Iron Man 2",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What organization is credited with producing a film that is part of the superhero team franchise known for assembling iconic characters like Iron Man and Thor?",
+        "A": "Church of Scientology",
+        "B": "Young Money Entertainment",
+        "C": "Marvel Studios",
+        "D": "Guinness World Records",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Avengers: Endgame",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            49,
+            3,
+            1
+        ],
+        "page_ranks": [
+            20.4,
+            1.28,
+            0.51
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            -0.06,
+            -0.01
+        ],
+        "quintuple": [
+            "Marvel Studios",
+            "Organization",
+            "PRODUCED_BY",
+            "<-",
+            "Avengers: Endgame",
+            "Film",
+            "PART_OF",
+            "->",
+            "Avengers",
+            "Concept"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Known for producing a popular superhero film series, what organization is also credited with producing the 2017 hit film \"Spider-Man: Homecoming\"?",
+        "A": "Marvel Studios",
+        "B": "Songwriters Hall of Fame",
+        "C": "Def Jam Recordings",
+        "D": "40/40 Club",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Avengers: Endgame",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            3,
+            3,
+            49,
+            4
+        ],
+        "page_ranks": [
+            1.24,
+            1.28,
+            20.4,
+            1.76
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.12,
+            -0.07,
+            -0.08
+        ],
+        "quintuple": [
+            "Superhero Genre",
+            "Concept",
+            "PART_OF",
+            "<-",
+            "Avengers: Endgame",
+            "Film",
+            "PRODUCED_BY",
+            "->",
+            "Marvel Studios",
+            "Organization"
+        ],
+        "helper_triple": [
+            "Marvel Studios",
+            "Organization",
+            "PRODUCED_BY",
+            "<-",
+            "Spider-Man: Homecoming",
+            "Film"
+        ],
+        "valid": true
+    }
+]

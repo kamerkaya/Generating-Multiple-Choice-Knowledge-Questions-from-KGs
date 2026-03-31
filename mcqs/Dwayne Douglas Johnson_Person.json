@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the action film \"G.I. Joe: Retaliation,\" who played the role of Roadblock?",
+        "A": "Brian Epstein",
+        "B": "Farrokh Bulsara",
+        "C": "Destiny Hope Cyrus",
+        "D": "Dwayne Douglas Johnson",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            36,
+            1
+        ],
+        "page_ranks": [
+            14.89,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            -0.04,
+            0.09
+        ],
+        "triple": [
+            "Dwayne Douglas Johnson",
+            "Person",
+            "ACTOR",
+            "->",
+            "G.I. Joe: Retaliation",
+            "Creative work"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In the action-packed film \"G.I. Joe: Retaliation,\" which actor, who is also known by the moniker \"The Rock,\" played a significant role?",
+        "A": "Dwayne Douglas Johnson",
+        "B": "6Ix9Ine",
+        "C": "Milena Markovna \"Mila\" Kunis",
+        "D": "Thomas Cruise Mapother IV",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            36,
+            1
+        ],
+        "page_ranks": [
+            0.5,
+            14.89,
+            0.5
+        ],
+        "distractor_depths": [
+            3,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.07,
+            0.01,
+            -0.08
+        ],
+        "triple": [
+            "Dwayne Douglas Johnson",
+            "Person",
+            "ACTOR",
+            "->",
+            "G.I. Joe: Retaliation",
+            "Creative work"
+        ],
+        "helper_triple": [
+            "Dwayne Douglas Johnson",
+            "Person",
+            "ALIAS",
+            "->",
+            "The Rock",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which influential person's status is shared with a famous rapper who has been recognized for his significant impact by a renowned publication?",
+        "A": "Dwayne Michael Carter Jr.",
+        "B": "Miley Ray Cyrus",
+        "C": "Dwayne Douglas Johnson",
+        "D": "Khloé Kardashian",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Time",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            36,
+            7,
+            20
+        ],
+        "page_ranks": [
+            14.89,
+            2.38,
+            6.95
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            0.09,
+            -0.02
+        ],
+        "quintuple": [
+            "Dwayne Douglas Johnson",
+            "Person",
+            "INFLUENTIAL_PERSON",
+            "->",
+            "Time",
+            "Organization",
+            "INFLUENTIAL",
+            "<-",
+            "Jay-Z",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which notable individual, known for their affiliation with the Calgary Stampeders, shares a connection of influence with Lionel Andrés Messi through a prominent organization?",
+        "A": "Dwayne Douglas Johnson",
+        "B": "Billy Ray Cyrus",
+        "C": "Duke of York",
+        "D": "George Harrison",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Time",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            26,
+            7,
+            36,
+            1
+        ],
+        "page_ranks": [
+            10.26,
+            2.38,
+            14.89,
+            0.5
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.09,
+            0.13,
+            -0.04
+        ],
+        "quintuple": [
+            "Lionel Andrés Messi",
+            "Person",
+            "INFLUENTIAL",
+            "->",
+            "Time",
+            "Organization",
+            "INFLUENTIAL_PERSON",
+            "<-",
+            "Dwayne Douglas Johnson",
+            "Person"
+        ],
+        "helper_triple": [
+            "Dwayne Douglas Johnson",
+            "Person",
+            "AFFILIATION",
+            "->",
+            "Calgary Stampeders",
+            "Organization"
+        ],
+        "valid": true
+    }
+]

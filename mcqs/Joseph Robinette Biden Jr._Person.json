@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Under whose leadership were sanctions imposed against Russia by a sitting U.S. President?",
+        "A": "Jony Ive",
+        "B": "Joseph Robinette Biden Jr.",
+        "C": "John Felix Anthony Cena",
+        "D": "Carter Bays",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            22
+        ],
+        "page_ranks": [
+            9.65,
+            7.73
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            -0.12,
+            -0.05
+        ],
+        "triple": [
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "IMPOSED_SANCTIONS",
+            "->",
+            "Russia",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who was elected to the New Castle County Council and later signed the American Rescue Plan Act?",
+        "A": "Vladimir Putin",
+        "B": "Scooter Braun",
+        "C": "Joseph Robinette Biden Jr.",
+        "D": "Duchess of York",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            26,
+            1
+        ],
+        "page_ranks": [
+            0.46,
+            9.65,
+            0.46
+        ],
+        "distractor_depths": [
+            2,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.32,
+            0.01,
+            0.02
+        ],
+        "triple": [
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "ELECTED_TO",
+            "->",
+            "New Castle County Council",
+            "Organization"
+        ],
+        "helper_triple": [
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "SIGNED",
+            "->",
+            "American Rescue Plan Act",
+            "Legislation"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which current leader of a country that has historical forced trade relations with Japan held the office starting from 2021?",
+        "A": "Pamela Fryman",
+        "B": "Clarence Thomas",
+        "C": "Joseph Robinette Biden Jr.",
+        "D": "Kimberly Noel Kardashian",
+        "correct_answer": "C",
+        "hidden_middle_entity": "United States",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            22,
+            23
+        ],
+        "page_ranks": [
+            9.65,
+            6.8,
+            8.64
+        ],
+        "distractor_depths": [
+            5,
+            1,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.05,
+            0.98,
+            0.03
+        ],
+        "quintuple": [
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "PRESIDENT",
+            "->",
+            "United States",
+            "Country",
+            "FORCED_TRADE_WITH",
+            "<-",
+            "Japan",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In 1982, a historic event took place involving the return of the Sinai Peninsula. Which political figure, known for having an approval rating assessed by Gallup, supported the country involved in this event?",
+        "A": "Mary Lincoln",
+        "B": "Gianna Bryant",
+        "C": "Grover Cleveland",
+        "D": "Joseph Robinette Biden Jr.",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Israel",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            37,
+            26,
+            1
+        ],
+        "page_ranks": [
+            0.48,
+            14.5,
+            9.65,
+            0.46
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.09,
+            0.02,
+            0.19
+        ],
+        "quintuple": [
+            "1982",
+            "Date",
+            "RETURNED_SINAI",
+            "<-",
+            "Israel",
+            "Country",
+            "SUPPORTED",
+            "<-",
+            "Joseph Robinette Biden Jr.",
+            "Person"
+        ],
+        "helper_triple": [
+            "Joseph Robinette Biden Jr.",
+            "Person",
+            "APPROVAL_RATING",
+            "<-",
+            "Gallup",
+            "Organization"
+        ],
+        "valid": true
+    }
+]

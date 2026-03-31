@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the crime film \"Gang Related\", which influential musician and actor took on one of the leading roles alongside James Belushi?",
+        "A": "Jeffrey Lionel Dahmer",
+        "B": "Miley Ray Cyrus",
+        "C": "Kourtney Kardashian",
+        "D": "Tupac Amaru Shakur",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            34,
+            1
+        ],
+        "page_ranks": [
+            14.43,
+            0.51
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.09,
+            -0.08,
+            -0.06
+        ],
+        "triple": [
+            "Tupac Amaru Shakur",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "Gang Related",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which influential rapper, who collaborated with Snoop Dogg, released the posthumous album \"Greatest Hits\"?",
+        "A": "Tupac Amaru Shakur",
+        "B": "John Lennon",
+        "C": "Lionel Andrés Messi",
+        "D": "Taylor Alison Swift",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            34,
+            1
+        ],
+        "page_ranks": [
+            0.51,
+            14.43,
+            0.51
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.08,
+            0.04,
+            -0.15
+        ],
+        "triple": [
+            "Tupac Amaru Shakur",
+            "Person",
+            "POSTHUMOUS_ALBUM",
+            "->",
+            "Greatest Hits",
+            "Album"
+        ],
+        "helper_triple": [
+            "Tupac Amaru Shakur",
+            "Person",
+            "COLLABORATED_WITH",
+            "->",
+            "Snoop Dogg",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Known for both his musical influence and acting roles, which iconic figure shares the same profession as the star of the \"Terminator\" film series?",
+        "A": "Scarlett Ingrid Johansson",
+        "B": "Dr. Dre",
+        "C": "Justin Drew Bieber",
+        "D": "Tupac Amaru Shakur",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Actor",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            34,
+            4,
+            32
+        ],
+        "page_ranks": [
+            14.43,
+            1.54,
+            13.38
+        ],
+        "distractor_depths": [
+            4,
+            1,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            0.78,
+            -0.09
+        ],
+        "quintuple": [
+            "Tupac Amaru Shakur",
+            "Person",
+            "OCCUPATION",
+            "->",
+            "Actor",
+            "Occupation",
+            "HAS_OCCUPATION",
+            "<-",
+            "Arnold Alois Schwarzenegger",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What individual, who shared an occupation with Arnold Schwarzenegger, tragically met their end in Las Vegas?",
+        "A": "Tupac Amaru Shakur",
+        "B": "Bill Black",
+        "C": "Khloé Kardashian",
+        "D": "Arnold Alois Schwarzenegger",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Actor",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            32,
+            4,
+            34,
+            1
+        ],
+        "page_ranks": [
+            13.38,
+            1.54,
+            14.43,
+            0.51
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            -0.06,
+            -0.05
+        ],
+        "quintuple": [
+            "Arnold Alois Schwarzenegger",
+            "Person",
+            "HAS_OCCUPATION",
+            "->",
+            "Actor",
+            "Occupation",
+            "OCCUPATION",
+            "<-",
+            "Tupac Amaru Shakur",
+            "Person"
+        ],
+        "helper_triple": [
+            "Tupac Amaru Shakur",
+            "Person",
+            "DEATH_PLACE",
+            "->",
+            "Las Vegas",
+            "Location"
+        ],
+        "valid": true
+    }
+]

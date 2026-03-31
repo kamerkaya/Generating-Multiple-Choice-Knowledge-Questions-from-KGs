@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which singer is known for having a major hit with the remixed version of the song \"Despacito\"?",
+        "A": "Ryan Reynolds",
+        "B": "Karim Benzema",
+        "C": "Farrokh Bulsara",
+        "D": "Justin Drew Bieber",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            31,
+            1
+        ],
+        "page_ranks": [
+            11.49,
+            0.46
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.02,
+            0.02,
+            -0.03
+        ],
+        "triple": [
+            "Justin Drew Bieber",
+            "Person",
+            "SINGLE",
+            "->",
+            "Despacito",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What artist, whose debut EP is titled \"My World,\" was brought to us by the famous musician Usher?",
+        "A": "Justin Drew Bieber",
+        "B": "Michael Jeffrey Jordan",
+        "C": "Edward VIII",
+        "D": "The Rock",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            31,
+            2
+        ],
+        "page_ranks": [
+            0.46,
+            11.49,
+            0.81
+        ],
+        "distractor_depths": [
+            2,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.03,
+            0.04,
+            -0.05
+        ],
+        "triple": [
+            "Justin Drew Bieber",
+            "Person",
+            "DEBUT_EP",
+            "->",
+            "My World",
+            "Album"
+        ],
+        "helper_triple": [
+            "Justin Drew Bieber",
+            "Person",
+            "BROUGHT_TO_US_BY",
+            "->",
+            "Usher",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Widely known for recognizing influential celebrities, what organization named a pop star and reality TV personality among the most powerful individuals, with the pop star also being identified as a Canadian singer internationally renowned for his hit songs?",
+        "A": "Muammar Gaddafi",
+        "B": "Cristiano Ronaldo",
+        "C": "Angelina Jolie",
+        "D": "Justin Drew Bieber",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Forbes",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            31,
+            7,
+            26
+        ],
+        "page_ranks": [
+            11.49,
+            2.46,
+            11.07
+        ],
+        "distractor_depths": [
+            5,
+            2,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            0.03,
+            -0.09
+        ],
+        "quintuple": [
+            "Justin Drew Bieber",
+            "Person",
+            "NAMED_POWERFUL",
+            "<-",
+            "Forbes",
+            "Organization",
+            "RECOGNIZED_BY",
+            "<-",
+            "Kimberly Noel Kardashian",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What Canadian singer, known for the hit single \"Stay,\" speaks French as an official language due to his nationality?",
+        "A": "Justin Drew Bieber",
+        "B": "Stephen A. Douglas",
+        "C": "Lionel Messi",
+        "D": "Warren G. Harding",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Canada",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            25,
+            31,
+            1
+        ],
+        "page_ranks": [
+            0.46,
+            9.11,
+            11.49,
+            0.46
+        ],
+        "distractor_depths": [
+            4,
+            3,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            0.02,
+            0.05
+        ],
+        "quintuple": [
+            "French",
+            "Language",
+            "OFFICIAL_LANGUAGE",
+            "<-",
+            "Canada",
+            "Country",
+            "NATIONALITY",
+            "<-",
+            "Justin Drew Bieber",
+            "Person"
+        ],
+        "helper_triple": [
+            "Justin Drew Bieber",
+            "Person",
+            "SINGLE",
+            "->",
+            "Stay",
+            "Song"
+        ],
+        "valid": true
+    }
+]

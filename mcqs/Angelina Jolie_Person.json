@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who is the acclaimed actor and director known for receiving a coveted Golden Globe Award for her performances?",
+        "A": "Neil Patrick Harris",
+        "B": "Rob Greenberg",
+        "C": "Angelina Jolie",
+        "D": "Donald Trump",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            33,
+            8
+        ],
+        "page_ranks": [
+            13.11,
+            2.85
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.11,
+            0.11,
+            0.05
+        ],
+        "triple": [
+            "Angelina Jolie",
+            "Person",
+            "RECIPIENT_OF",
+            "->",
+            "Golden Globe Award",
+            "Award"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who directed the film \"In the Land of Blood and Honey\" and also acted in the movie \"Changeling\"?",
+        "A": "Angelina Jolie",
+        "B": "Anthony Russo",
+        "C": "Rob Greenberg",
+        "D": "Gale Anne Hurd",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            33,
+            1
+        ],
+        "page_ranks": [
+            0.48,
+            13.11,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            0.11,
+            -0.02
+        ],
+        "triple": [
+            "Angelina Jolie",
+            "Person",
+            "DIRECTED",
+            "->",
+            "In the Land of Blood and Honey",
+            "Film"
+        ],
+        "helper_triple": [
+            "Angelina Jolie",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Changeling",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which individual, known for their remarkable achievements in the entertainment industry, has received recognition through notable awards that have also been associated with music moguls like Jay-Z?",
+        "A": "Angelina Jolie",
+        "B": "Doja Cat",
+        "C": "Elvis Aaron Presley",
+        "D": "Cruz Bustamante",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Tony Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            33,
+            3,
+            20
+        ],
+        "page_ranks": [
+            13.11,
+            1.1,
+            6.95
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.13,
+            0.04,
+            -0.03
+        ],
+        "quintuple": [
+            "Angelina Jolie",
+            "Person",
+            "RECIPIENT_OF",
+            "->",
+            "Tony Award",
+            "Award",
+            "NOMINATED",
+            "<-",
+            "Jay-Z",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which humanitarian award recipient has also been recognized alongside John Christopher Depp II by the same prestigious film organization?",
+        "A": "Bill Black",
+        "B": "Angelina Jolie",
+        "C": "Sharon Tate",
+        "D": "Brad Pitt",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Academy Award",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            40,
+            8,
+            33,
+            1
+        ],
+        "page_ranks": [
+            16.45,
+            2.84,
+            13.11,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            1
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            0.06,
+            1.0
+        ],
+        "quintuple": [
+            "John Christopher Depp II",
+            "Person",
+            "NOMINATED",
+            "->",
+            "Academy Award",
+            "Award",
+            "RECIPIENT_OF",
+            "<-",
+            "Angelina Jolie",
+            "Person"
+        ],
+        "helper_triple": [
+            "Angelina Jolie",
+            "Person",
+            "RECIPIENT_OF",
+            "->",
+            "Jean Hersholt Humanitarian Award",
+            "Award"
+        ],
+        "valid": true
+    }
+]

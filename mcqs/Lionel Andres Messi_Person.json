@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which footballer has famously won the UEFA Champions League multiple times during his illustrious career?",
+        "A": "Lionel Andrés Messi",
+        "B": "Steven Paul Jobs",
+        "C": "Stefani Joanne Angelina Germanotta",
+        "D": "Milena Markovna \"Mila\" Kunis",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            1
+        ],
+        "page_ranks": [
+            10.26,
+            0.48
+        ],
+        "distractor_depths": [
+            4,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.15,
+            0.05,
+            0.01
+        ],
+        "triple": [
+            "Lionel Andrés Messi",
+            "Person",
+            "WON",
+            "->",
+            "UEFA Champions League",
+            "Event"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In 2021, which legendary footballer achieved a career milestone by winning both the prestigious Ligue 1 championship and the FIFA World Cup?",
+        "A": "Ray J",
+        "B": "Diego Maradona",
+        "C": "Rob Greenberg",
+        "D": "Lionel Andrés Messi",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            26,
+            1
+        ],
+        "page_ranks": [
+            0.48,
+            10.26,
+            0.48
+        ],
+        "distractor_depths": [
+            3,
+            1,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.02,
+            0.99,
+            0.04
+        ],
+        "triple": [
+            "Lionel Andrés Messi",
+            "Person",
+            "WON",
+            "->",
+            "Ligue 1",
+            "Event"
+        ],
+        "helper_triple": [
+            "Lionel Andrés Messi",
+            "Person",
+            "WON",
+            "->",
+            "FIFA World Cup",
+            "Event"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who is known as a major rival to the record-holding player of the UEFA Champions League?",
+        "A": "Martin Scorsese",
+        "B": "Charles Milles Manson",
+        "C": "Lionel Andrés Messi",
+        "D": "Sam Phillips",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Cristiano Ronaldo",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            22,
+            1
+        ],
+        "page_ranks": [
+            10.26,
+            8.71,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.07,
+            -0.0,
+            0.06
+        ],
+        "quintuple": [
+            "Lionel Andrés Messi",
+            "Person",
+            "RIVAL",
+            "->",
+            "Cristiano Ronaldo",
+            "Person",
+            "RECORD_HOLDER",
+            "->",
+            "UEFA Champions League",
+            "Competition"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which influential individual, recognized alongside Bruce Lee as one of the 100 most important people of the 20th century, celebrated a major victory by winning the Copa América?",
+        "A": "Brad Pitt",
+        "B": "Lionel Andrés Messi",
+        "C": "Tupac Amaru Shakur",
+        "D": "Ketanji Brown Jackson",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Time",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            22,
+            7,
+            26,
+            1
+        ],
+        "page_ranks": [
+            8.37,
+            2.38,
+            10.26,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.08,
+            0.04,
+            0.11
+        ],
+        "quintuple": [
+            "Bruce Lee",
+            "Person",
+            "NAMED_ONE_OF_100_MOST_IMPORTANT_PEOPLE_OF_20TH_CENTURY",
+            "->",
+            "Time",
+            "Organization",
+            "INFLUENTIAL",
+            "<-",
+            "Lionel Andrés Messi",
+            "Person"
+        ],
+        "helper_triple": [
+            "Lionel Andrés Messi",
+            "Person",
+            "WON",
+            "->",
+            "Copa América",
+            "Event"
+        ],
+        "valid": true
+    }
+]

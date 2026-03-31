@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "By what name is the artist born as Kanye Omari West now professionally known?",
+        "A": "Ye",
+        "B": "Tim Burton",
+        "C": "Kareem Abdul-Jabbar",
+        "D": "Colonel Tom Parker",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            46,
+            1
+        ],
+        "page_ranks": [
+            18.52,
+            0.49
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.07,
+            -0.08,
+            -0.01
+        ],
+        "triple": [
+            "Ye",
+            "Person",
+            "ALIAS",
+            "->",
+            "Kanye Omari West",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which individual, known for creating the album \"808s & Heartbreak,\" has been featured in the publication Rolling Stone?",
+        "A": "Scarlett Ingrid Johansson",
+        "B": "Tony Bennett",
+        "C": "Lionel Messi",
+        "D": "Ye",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            46,
+            1
+        ],
+        "page_ranks": [
+            0.83,
+            18.52,
+            0.49
+        ],
+        "distractor_depths": [
+            2,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.03,
+            -0.0,
+            -0.05
+        ],
+        "triple": [
+            "Ye",
+            "Person",
+            "FEATURED_IN",
+            "->",
+            "Rolling Stone",
+            "Publication"
+        ],
+        "helper_triple": [
+            "Ye",
+            "Person",
+            "CREATED",
+            "->",
+            "808s & Heartbreak",
+            "Album"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which renowned musician, like Elvis Aaron Presley, has been celebrated for their achievements by winning one of the music industry's most prestigious awards?",
+        "A": "Sam Phillips",
+        "B": "Kid Cudi",
+        "C": "Ye",
+        "D": "Bill Black",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Grammy Awards",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            46,
+            8,
+            25
+        ],
+        "page_ranks": [
+            18.52,
+            2.75,
+            9.63
+        ],
+        "distractor_depths": [
+            3,
+            1,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.0,
+            1.0,
+            -0.01
+        ],
+        "quintuple": [
+            "Ye",
+            "Person",
+            "WON",
+            "->",
+            "Grammy Awards",
+            "Award",
+            "WON",
+            "<-",
+            "Elvis Aaron Presley",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which person, who is married to Kim Kardashian, collaborated with the artist named by Billboard as the greatest rapper?",
+        "A": "Lil Wayne",
+        "B": "2Pac",
+        "C": "Ye",
+        "D": "Charles Milles Manson",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Jay-Z",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            5,
+            20,
+            46,
+            1
+        ],
+        "page_ranks": [
+            1.68,
+            6.95,
+            18.52,
+            0.49
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            -0.08,
+            -0.04
+        ],
+        "quintuple": [
+            "Billboard",
+            "Organization",
+            "GREATEST_RAPPER",
+            "<-",
+            "Jay-Z",
+            "Person",
+            "COLLABORATED_WITH",
+            "<-",
+            "Ye",
+            "Person"
+        ],
+        "helper_triple": [
+            "Ye",
+            "Person",
+            "MARRIED_TO",
+            "->",
+            "Kim Kardashian",
+            "Person"
+        ],
+        "valid": true
+    }
+]

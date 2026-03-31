@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who was the monarch of New Zealand from 1952 until their passing in 2022?",
+        "A": "Elizabeth II",
+        "B": "Arnold Alois Schwarzenegger",
+        "C": "Bruce Lee",
+        "D": "Clarence Thomas",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            49,
+            1
+        ],
+        "page_ranks": [
+            17.73,
+            0.45
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            -0.0,
+            -0.03
+        ],
+        "triple": [
+            "Elizabeth II",
+            "Person",
+            "QUEEN",
+            "->",
+            "New Zealand",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In a remarkable historical timeline, the successor to the throne of the United Kingdom became King Charles due to his parent, who once held the title of sovereign in this nation. Who was this renowned monarch?",
+        "A": "Franz von Papen",
+        "B": "Elizabeth II",
+        "C": "Warren G. Harding",
+        "D": "Elon Reeve Musk",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            49,
+            28
+        ],
+        "page_ranks": [
+            0.77,
+            17.73,
+            9.18
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.07,
+            -0.0,
+            -0.01
+        ],
+        "triple": [
+            "Elizabeth II",
+            "Person",
+            "CHILD",
+            "->",
+            "Charles",
+            "Person"
+        ],
+        "helper_triple": [
+            "Elizabeth II",
+            "Person",
+            "QUEEN",
+            "->",
+            "United Kingdom",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which person, known for their connection to a country with English as its official language, held the position of Queen?",
+        "A": "Elizabeth II",
+        "B": "Paris Hilton",
+        "C": "Adolf Hitler",
+        "D": "JFK",
+        "correct_answer": "A",
+        "hidden_middle_entity": "United Kingdom",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            49,
+            28,
+            3
+        ],
+        "page_ranks": [
+            17.73,
+            9.18,
+            1.04
+        ],
+        "distractor_depths": [
+            5,
+            2,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.05,
+            -0.01,
+            -0.09
+        ],
+        "quintuple": [
+            "Elizabeth II",
+            "Person",
+            "QUEEN",
+            "->",
+            "United Kingdom",
+            "Country",
+            "OFFICIAL_LANGUAGE",
+            "->",
+            "English",
+            "Language"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Having served in the Royal Navy, which British monarch, who was the grandchild of King George V, was succeeded by her son on the throne?",
+        "A": "Karim Benzema",
+        "B": "Elizabeth II",
+        "C": "Arnold Alois Schwarzenegger",
+        "D": "Joseph Robinette Biden Jr.",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Charles III",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            27,
+            49,
+            1
+        ],
+        "page_ranks": [
+            0.78,
+            10.25,
+            17.73,
+            0.45
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            0.07,
+            -0.02,
+            -0.01
+        ],
+        "quintuple": [
+            "Royal Navy",
+            "Organization",
+            "SERVED_IN",
+            "<-",
+            "Charles III",
+            "Person",
+            "SUCCEEDED_BY",
+            "<-",
+            "Elizabeth II",
+            "Person"
+        ],
+        "helper_triple": [
+            "Elizabeth II",
+            "Person",
+            "GRANDFATHER",
+            "->",
+            "King George V",
+            "Person"
+        ],
+        "valid": true
+    }
+]

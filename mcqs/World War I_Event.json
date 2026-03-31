@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which early 20th-century global conflict is considered a significant precursor to the events leading to the outbreak of World War II?",
+        "A": "World War I",
+        "B": "China–Vietnam Border Conflicts",
+        "C": "Paris Peace Conference",
+        "D": "Jewish Immigration",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            17
+        ],
+        "page_ranks": [
+            9.32,
+            5.4
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.1,
+            0.14,
+            0.14
+        ],
+        "triple": [
+            "World War I",
+            "Event",
+            "CONTRIBUTED_TO",
+            "->",
+            "World War II",
+            "Event"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "The outbreak of which event is considered to have been caused by Germany and took place in Europe?",
+        "A": "China–Vietnam Border Conflicts",
+        "B": "World War I",
+        "C": "Golden Jubilee",
+        "D": "Global Recession",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            53,
+            26,
+            2
+        ],
+        "page_ranks": [
+            18.29,
+            9.32,
+            0.79
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.1,
+            0.12,
+            0.05
+        ],
+        "triple": [
+            "World War I",
+            "Event",
+            "CAUSE",
+            "<-",
+            "Germany",
+            "Country"
+        ],
+        "helper_triple": [
+            "World War I",
+            "Event",
+            "LOCATION",
+            "->",
+            "Europe",
+            "Location"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Before leading a major invasion against a vast Eastern nation, which event saw the participation of a future dictator who would later become infamous during World War II?",
+        "A": "World War I",
+        "B": "Watergate Scandal",
+        "C": "Belle Époque",
+        "D": "Thirty Years' War",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Adolf Hitler",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            26,
+            24,
+            1
+        ],
+        "page_ranks": [
+            9.32,
+            8.85,
+            0.46
+        ],
+        "distractor_depths": [
+            5,
+            2,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.03,
+            0.39,
+            0.39
+        ],
+        "quintuple": [
+            "World War I",
+            "Event",
+            "PARTICIPATED_IN",
+            "<-",
+            "Adolf Hitler",
+            "Person",
+            "INVADED",
+            "->",
+            "Soviet Union",
+            "Place"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In 1914, the United Kingdom declared war on a neighboring country, leading to a significant global conflict characterized by the first use of tanks. What is the name of this event?",
+        "A": "Sino-Soviet Split",
+        "B": "Indochina Wars",
+        "C": "Reactor Core Fire",
+        "D": "World War I",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Germany",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            28,
+            53,
+            26,
+            1
+        ],
+        "page_ranks": [
+            9.18,
+            18.29,
+            9.32,
+            0.45
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.1,
+            -0.04,
+            0.08
+        ],
+        "quintuple": [
+            "United Kingdom",
+            "Country",
+            "DECLARED_WAR",
+            "->",
+            "Germany",
+            "Country",
+            "CAUSE",
+            "->",
+            "World War I",
+            "Event"
+        ],
+        "helper_triple": [
+            "World War I",
+            "Event",
+            "CHARACTERISTIC",
+            "->",
+            "Tanks",
+            "Concept"
+        ],
+        "valid": true
+    }
+]

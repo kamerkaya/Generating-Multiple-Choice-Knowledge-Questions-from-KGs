@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who is the artist behind the popular album \"Thank U, Next\"?",
+        "A": "Ariana Grande Butera",
+        "B": "Royce Da 5'9",
+        "C": "Kanye Omari West",
+        "D": "Brian Epstein",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            44,
+            3
+        ],
+        "page_ranks": [
+            16.78,
+            1.14
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            -0.02,
+            -0.16
+        ],
+        "triple": [
+            "Ariana Grande Butera",
+            "Person",
+            "RELEASED",
+            "->",
+            "Thank U Next",
+            "Album"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which singer, known for their use of the whistle register, has the full name that includes Butera?",
+        "A": "Jon Voight",
+        "B": "Thomas Cruise Mapother IV",
+        "C": "Selena Marie Gomez",
+        "D": "Ariana Grande Butera",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            44,
+            4
+        ],
+        "page_ranks": [
+            0.47,
+            16.78,
+            1.46
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            0.04,
+            -0.01
+        ],
+        "triple": [
+            "Ariana Grande Butera",
+            "Person",
+            "HAS_ATTRIBUTE",
+            "->",
+            "Whistle Register",
+            "Attribute"
+        ],
+        "helper_triple": [
+            "Ariana Grande Butera",
+            "Person",
+            "HAS_OCCUPATION",
+            "->",
+            "Singer",
+            "Occupation"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which artist released an album that includes a hit single sharing the same name, becoming a cultural phenomenon and often associated with moving on from past relationships?",
+        "A": "Muhammad Ali",
+        "B": "Ariana Grande Butera",
+        "C": "Tony Bennett",
+        "D": "Brad Pitt",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Thank U Next",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            44,
+            3,
+            2
+        ],
+        "page_ranks": [
+            16.78,
+            1.14,
+            0.8
+        ],
+        "distractor_depths": [
+            2,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.08,
+            0.04,
+            -0.04
+        ],
+        "quintuple": [
+            "Ariana Grande Butera",
+            "Person",
+            "RELEASED",
+            "->",
+            "Thank U Next",
+            "Album",
+            "CONTAINS",
+            "->",
+            "Thank U Next Single",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which singer, known for her role in the TV series \"Sam & Cat,\" was part of the cast nominated for the Academy Award for Best Supporting Actress?",
+        "A": "Michael Shea",
+        "B": "Ariana Grande Butera",
+        "C": "Notorious B.I.G.",
+        "D": "Tupac Amaru Shakur",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Wicked",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            2,
+            44,
+            1
+        ],
+        "page_ranks": [
+            0.54,
+            0.93,
+            16.78,
+            0.47
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            0.0,
+            0.01
+        ],
+        "quintuple": [
+            "Academy Award for Best Supporting Actress",
+            "Award",
+            "NOMINATED_FOR",
+            "<-",
+            "Wicked",
+            "Film",
+            "APPEARED_IN",
+            "<-",
+            "Ariana Grande Butera",
+            "Person"
+        ],
+        "helper_triple": [
+            "Ariana Grande Butera",
+            "Person",
+            "APPEARED_IN",
+            "->",
+            "Sam & Cat",
+            "Event"
+        ],
+        "valid": true
+    }
+]

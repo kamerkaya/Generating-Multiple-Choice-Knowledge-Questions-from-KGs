@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which former U.S. President expressed support for Ukraine during their time in office?",
+        "A": "Carter Bays",
+        "B": "John Fitzgerald Kennedy",
+        "C": "James A. Garfield",
+        "D": "Barack Hussein Obama II",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            3
+        ],
+        "page_ranks": [
+            13.85,
+            1.07
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.01,
+            -0.07,
+            0.11
+        ],
+        "triple": [
+            "Barack Hussein Obama II",
+            "Person",
+            "SUPPORTED",
+            "->",
+            "Ukraine",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which U.S. political figure extended the Bush Tax Cuts and also supported Ukraine during their presidency?",
+        "A": "Andrew",
+        "B": "Donald Trump",
+        "C": "William",
+        "D": "Barack Hussein Obama II",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            37,
+            3
+        ],
+        "page_ranks": [
+            0.47,
+            13.85,
+            1.07
+        ],
+        "distractor_depths": [
+            3,
+            3,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.07,
+            0.01,
+            0.01
+        ],
+        "triple": [
+            "Barack Hussein Obama II",
+            "Person",
+            "EXTENDED",
+            "->",
+            "Bush Tax Cuts",
+            "Legislation"
+        ],
+        "helper_triple": [
+            "Barack Hussein Obama II",
+            "Person",
+            "SUPPORTED",
+            "->",
+            "Ukraine",
+            "Country"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which U.S. President was in office during the military operation targeting the Taliban?",
+        "A": "Charles De Gaulle",
+        "B": "Nicki Minaj",
+        "C": "Barack Hussein Obama II",
+        "D": "Lionel Andrés Messi",
+        "correct_answer": "C",
+        "hidden_middle_entity": "United States",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            22,
+            2
+        ],
+        "page_ranks": [
+            13.85,
+            6.8,
+            0.7
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.03,
+            -0.02,
+            -0.07
+        ],
+        "quintuple": [
+            "Barack Hussein Obama II",
+            "Person",
+            "PRESIDENT",
+            "->",
+            "United States",
+            "Country",
+            "INVADED",
+            "->",
+            "The Taliban",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which former president, who ordered the military intervention in Libya in 2011, oversaw the withdrawal of troops from Afghanistan?",
+        "A": "John McCain",
+        "B": "Pamela Fryman",
+        "C": "Queen",
+        "D": "Barack Hussein Obama II",
+        "correct_answer": "D",
+        "hidden_middle_entity": "United States",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            3,
+            22,
+            37,
+            2
+        ],
+        "page_ranks": [
+            1.02,
+            6.8,
+            13.85,
+            0.92
+        ],
+        "distractor_depths": [
+            1,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.99,
+            -0.01,
+            -0.01
+        ],
+        "quintuple": [
+            "Afghanistan",
+            "Country",
+            "WITHDREW_FROM",
+            "<-",
+            "United States",
+            "Country",
+            "PRESIDENT",
+            "<-",
+            "Barack Hussein Obama II",
+            "Person"
+        ],
+        "helper_triple": [
+            "Barack Hussein Obama II",
+            "Person",
+            "ORDERED",
+            "->",
+            "Libya 2011 Military Intervention",
+            "Event"
+        ],
+        "valid": true
+    }
+]

@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which rapper released the album titled \"Encore\"?",
+        "A": "Karim Benzema",
+        "B": "Cristiano Ronaldo",
+        "C": "Tim Burton",
+        "D": "Eminem",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            42,
+            1
+        ],
+        "page_ranks": [
+            15.32,
+            0.46
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.02,
+            0.04
+        ],
+        "triple": [
+            "Eminem",
+            "Person",
+            "CREATED",
+            "->",
+            "Encore",
+            "Album"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which member of the duo Bad Meets Evil, who also released the album \"Music to Be Murdered By,\" has made a significant impact on the music industry?",
+        "A": "Eminem",
+        "B": "Keanu Charles Reeves",
+        "C": "Pamela Fryman",
+        "D": "Thomas Andrews Jr.",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            42,
+            1
+        ],
+        "page_ranks": [
+            0.46,
+            15.32,
+            0.46
+        ],
+        "distractor_depths": [
+            4,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            -0.03,
+            0.06
+        ],
+        "triple": [
+            "Eminem",
+            "Person",
+            "MEMBER_OF",
+            "->",
+            "Bad Meets Evil",
+            "Group"
+        ],
+        "helper_triple": [
+            "Eminem",
+            "Person",
+            "CREATED",
+            "->",
+            "Music to Be Murdered By",
+            "Album"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "This hip-hop artist shares a prestigious television award with Taylor Swift. Who is he?",
+        "A": "Eminem",
+        "B": "Milwaukee Cannibal",
+        "C": "Cristiano Ronaldo",
+        "D": "Diana Princess of Wales",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Primetime Emmy Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            42,
+            4,
+            41
+        ],
+        "page_ranks": [
+            15.32,
+            1.41,
+            16.62
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.03,
+            0.02,
+            -0.06
+        ],
+        "quintuple": [
+            "Eminem",
+            "Person",
+            "WON",
+            "->",
+            "Primetime Emmy Award",
+            "Award",
+            "WON",
+            "<-",
+            "Taylor Alison Swift",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which artist, known for creating the album \"Encore,\" was named Artist of the Decade, an accolade received by another artist ranked by the same entity that ranked Miley Ray Cyrus?",
+        "A": "Tyga",
+        "B": "Michael Shea",
+        "C": "Eminem",
+        "D": "Drake",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Billboard",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            42,
+            5,
+            42,
+            1
+        ],
+        "page_ranks": [
+            16.13,
+            1.68,
+            15.32,
+            0.46
+        ],
+        "distractor_depths": [
+            4,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            -0.07,
+            -0.03,
+            -0.07
+        ],
+        "quintuple": [
+            "Miley Ray Cyrus",
+            "Person",
+            "RANKED_BY",
+            "->",
+            "Billboard",
+            "Organization",
+            "NAMED_ARTIST_OF_DECADE",
+            "<-",
+            "Eminem",
+            "Person"
+        ],
+        "helper_triple": [
+            "Eminem",
+            "Person",
+            "CREATED",
+            "->",
+            "Encore",
+            "Album"
+        ],
+        "valid": true
+    }
+]

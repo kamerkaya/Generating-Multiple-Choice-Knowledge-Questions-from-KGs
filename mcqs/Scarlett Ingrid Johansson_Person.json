@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Known for her roles in films such as \"Lost in Translation\" and \"Marriage Story,\" which actress has been a prominent figure in Hollywood and has also appeared as Black Widow in the Marvel Cinematic Universe franchise?",
+        "A": "Gareth Bale",
+        "B": "Stefani Joanne Angelina Germanotta",
+        "C": "Scarlett Ingrid Johansson",
+        "D": "Colin Jost",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            42,
+            3
+        ],
+        "page_ranks": [
+            16.17,
+            1.13
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            1
+        ],
+        "node_embedding_similarity_scores": [
+            -0.08,
+            0.05,
+            1.0
+        ],
+        "triple": [
+            "Scarlett Ingrid Johansson",
+            "Person",
+            "HAS_OCCUPATION",
+            "->",
+            "Actress",
+            "Occupation"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In 2010, who received a Tony Award and has also been divorced from Ryan Reynolds?",
+        "A": "Tupac Amaru Shakur",
+        "B": "Gray Davis",
+        "C": "Arnold Alois Schwarzenegger",
+        "D": "Scarlett Ingrid Johansson",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            3,
+            42,
+            2
+        ],
+        "page_ranks": [
+            1.1,
+            16.17,
+            0.82
+        ],
+        "distractor_depths": [
+            4,
+            3,
+            2
+        ],
+        "node_embedding_similarity_scores": [
+            -0.02,
+            0.04,
+            0.03
+        ],
+        "triple": [
+            "Scarlett Ingrid Johansson",
+            "Person",
+            "RECEIVED",
+            "->",
+            "Tony Award",
+            "Award"
+        ],
+        "helper_triple": [
+            "Scarlett Ingrid Johansson",
+            "Person",
+            "DIVORCED_FROM",
+            "->",
+            "Ryan Reynolds",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which Hollywood actress shares her nationality with Jennifer Aniston?",
+        "A": "Kourtney Kardashian",
+        "B": "Phil Heath",
+        "C": "Keanu Charles Reeves",
+        "D": "Scarlett Ingrid Johansson",
+        "correct_answer": "D",
+        "hidden_middle_entity": "American",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            42,
+            12,
+            29
+        ],
+        "page_ranks": [
+            16.17,
+            4.24,
+            11.31
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.04,
+            0.07
+        ],
+        "quintuple": [
+            "Scarlett Ingrid Johansson",
+            "Person",
+            "HAS_NATIONALITY",
+            "->",
+            "American",
+            "Nationality",
+            "NATIONALITY",
+            "<-",
+            "Jennifer Joanna Aniston",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who, nominated alongside Willard Carroll Smith II for a prestigious film award, was named in the Time 100 Most Influential list in 2021?",
+        "A": "Scarlett Ingrid Johansson",
+        "B": "Usher",
+        "C": "Colonel Tom Parker",
+        "D": "Makaveli",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Academy Award",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            35,
+            8,
+            42,
+            1
+        ],
+        "page_ranks": [
+            14.56,
+            2.84,
+            16.17,
+            0.47
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            0.02,
+            -0.03
+        ],
+        "quintuple": [
+            "Willard Carroll Smith II",
+            "Person",
+            "RECEIVED",
+            "->",
+            "Academy Award",
+            "Award",
+            "NOMINATED_FOR",
+            "<-",
+            "Scarlett Ingrid Johansson",
+            "Person"
+        ],
+        "helper_triple": [
+            "Scarlett Ingrid Johansson",
+            "Person",
+            "NAMED_IN",
+            "->",
+            "Time 100 Most Influential 2021",
+            "Achievement"
+        ],
+        "valid": true
+    }
+]

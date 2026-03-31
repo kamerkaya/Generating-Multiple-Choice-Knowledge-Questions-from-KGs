@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the 2003 comedy film \"Bruce Almighty,\" who played the role of Grace Connelly, the love interest of Jim Carrey's character?",
+        "A": "Willard Carroll Smith II",
+        "B": "Jennifer Joanna Aniston",
+        "C": "Joe Perry",
+        "D": "Freddie Mercury",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            29,
+            2
+        ],
+        "page_ranks": [
+            11.31,
+            0.94
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.0,
+            0.14,
+            0.1
+        ],
+        "triple": [
+            "Jennifer Joanna Aniston",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "Bruce Almighty",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which actress, who played the iconic role of Rachel Green, starred in the film \"We're the Millers\"?",
+        "A": "Dwayne Douglas Johnson",
+        "B": "Jennifer Joanna Aniston",
+        "C": "Tony Bennett",
+        "D": "Paul McCartney",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            29,
+            2
+        ],
+        "page_ranks": [
+            0.94,
+            11.31,
+            0.9
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.05,
+            0.04,
+            -0.06
+        ],
+        "triple": [
+            "Jennifer Joanna Aniston",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "We're the Millers",
+            "Film"
+        ],
+        "helper_triple": [
+            "Jennifer Joanna Aniston",
+            "Person",
+            "ROLE",
+            "->",
+            "Rachel Green",
+            "Role"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "In which 2006 film, known for its portrayal of a relationship coming to an end, did an acclaimed actress take on a leading role?",
+        "A": "John Aniston",
+        "B": "Ronnie Coleman",
+        "C": "Miley Ray Cyrus",
+        "D": "Jennifer Joanna Aniston",
+        "correct_answer": "D",
+        "hidden_middle_entity": "The Break-Up",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            29,
+            2,
+            1
+        ],
+        "page_ranks": [
+            11.31,
+            0.94,
+            0.55
+        ],
+        "distractor_depths": [
+            1,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.98,
+            0.1,
+            0.06
+        ],
+        "quintuple": [
+            "Jennifer Joanna Aniston",
+            "Person",
+            "STARRED_IN",
+            "->",
+            "The Break-Up",
+            "Film",
+            "RELEASE_YEAR",
+            "->",
+            "2006",
+            "Year"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which award-winning actress, known for being part of a popular morning-themed show on Apple TV+, has received a Screen Actors Guild Award?",
+        "A": "Marshall Bruce Mathers III",
+        "B": "Michael Shea",
+        "C": "Child with Dauriac",
+        "D": "Jennifer Joanna Aniston",
+        "correct_answer": "D",
+        "hidden_middle_entity": "The Morning Show",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            2,
+            29,
+            1
+        ],
+        "page_ranks": [
+            0.55,
+            0.94,
+            11.31,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.08,
+            0.12,
+            0.09
+        ],
+        "quintuple": [
+            "Apple TV+",
+            "Platform",
+            "PLATFORM",
+            "<-",
+            "The Morning Show",
+            "Television show",
+            "STARRED_IN",
+            "<-",
+            "Jennifer Joanna Aniston",
+            "Person"
+        ],
+        "helper_triple": [
+            "Jennifer Joanna Aniston",
+            "Person",
+            "AWARD_RECEIVED",
+            "->",
+            "Screen Actors Guild",
+            "Award"
+        ],
+        "valid": true
+    }
+]

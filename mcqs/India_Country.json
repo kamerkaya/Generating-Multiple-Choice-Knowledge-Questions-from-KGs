@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In which country was the historical Delhi Sultanate primarily located?",
+        "A": "Malaysia",
+        "B": "Australia",
+        "C": "Canada",
+        "D": "India",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            30,
+            1
+        ],
+        "page_ranks": [
+            12.63,
+            0.5
+        ],
+        "distractor_depths": [
+            4,
+            3,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            0.02,
+            0.03
+        ],
+        "triple": [
+            "India",
+            "Country",
+            "LOCATED_IN",
+            "<-",
+            "Delhi Sultanate",
+            "Empire"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Once ruled by the British East India Company, which country is bordered by the Arabian Sea?",
+        "A": "India",
+        "B": "Canada",
+        "C": "United States of America",
+        "D": "Ukraine",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            30,
+            1
+        ],
+        "page_ranks": [
+            0.5,
+            12.63,
+            0.5
+        ],
+        "distractor_depths": [
+            3,
+            3,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.03,
+            -0.04,
+            0.08
+        ],
+        "triple": [
+            "India",
+            "Country",
+            "RULED",
+            "<-",
+            "British East India Company",
+            "Organization"
+        ],
+        "helper_triple": [
+            "India",
+            "Country",
+            "BOUNDED_BY",
+            "->",
+            "Arabian Sea",
+            "Body of water"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Known for leading a nation against the Axis Powers during World War II, what country is a former colony of the British Empire?",
+        "A": "India",
+        "B": "Denmark",
+        "C": "Bhutan",
+        "D": "Ukraine",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Winston Churchill",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            30,
+            16,
+            1
+        ],
+        "page_ranks": [
+            12.63,
+            6.24,
+            0.48
+        ],
+        "distractor_depths": [
+            4,
+            1,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            0.99,
+            0.08
+        ],
+        "quintuple": [
+            "India",
+            "Country",
+            "FORMER_COLONY",
+            "<-",
+            "Winston Churchill",
+            "Person",
+            "OPPONENT",
+            "->",
+            "Axis Powers",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "The man who succeeded Neville Chamberlain as British Prime Minister once led a country that is bordered by the Arabian Sea. Which country is this?",
+        "A": "Nazi Germany",
+        "B": "Myanmar",
+        "C": "Serbia",
+        "D": "India",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Winston Churchill",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            16,
+            30,
+            1
+        ],
+        "page_ranks": [
+            0.48,
+            6.24,
+            12.63,
+            0.5
+        ],
+        "distractor_depths": [
+            2,
+            1,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.32,
+            0.65,
+            0.01
+        ],
+        "quintuple": [
+            "Neville Chamberlain",
+            "Person",
+            "SUCCESSOR",
+            "<-",
+            "Winston Churchill",
+            "Person",
+            "FORMER_COLONY",
+            "->",
+            "India",
+            "Country"
+        ],
+        "helper_triple": [
+            "India",
+            "Country",
+            "BOUNDED_BY",
+            "->",
+            "Arabian Sea",
+            "Body of water"
+        ],
+        "valid": true
+    }
+]

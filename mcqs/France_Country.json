@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which country was actively involved in a major global conflict from 1939 to 1945, known for its iconic resistance movement and strategic battles in both Europe and North Africa?",
+        "A": "Empire Of Japan",
+        "B": "France",
+        "C": "Sri Lanka",
+        "D": "Bangladesh",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            39,
+            17
+        ],
+        "page_ranks": [
+            14.43,
+            5.4
+        ],
+        "distractor_depths": [
+            3,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.13,
+            0.02,
+            0.02
+        ],
+        "triple": [
+            "France",
+            "Country",
+            "INVOLVED_IN",
+            "->",
+            "World War II",
+            "Event"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which historic nation, once led by Napoleon Bonaparte, was a key participant in World War I?",
+        "A": "France",
+        "B": "People's Republic of China",
+        "C": "Egypt",
+        "D": "Myanmar",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            39,
+            26
+        ],
+        "page_ranks": [
+            0.92,
+            14.43,
+            9.32
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.04,
+            -0.09,
+            0.0
+        ],
+        "triple": [
+            "France",
+            "Country",
+            "LED_BY",
+            "->",
+            "Napoleon Bonaparte",
+            "Person"
+        ],
+        "helper_triple": [
+            "France",
+            "Country",
+            "INVOLVED_IN",
+            "->",
+            "World War I",
+            "Event"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "After offering a universal healthcare system, which country found itself at war with the nation that made this offer?",
+        "A": "Switzerland",
+        "B": "France",
+        "C": "Netherlands",
+        "D": "Maldives",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Germany",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            39,
+            53,
+            1
+        ],
+        "page_ranks": [
+            14.43,
+            18.29,
+            0.44
+        ],
+        "distractor_depths": [
+            2,
+            2,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.23,
+            0.32,
+            0.02
+        ],
+        "quintuple": [
+            "France",
+            "Country",
+            "DECLARED_WAR",
+            "<-",
+            "Germany",
+            "Country",
+            "OFFERS",
+            "->",
+            "Universal Health Care System",
+            "System"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "If you're traveling from Austria to a country that shares a border with it and also played a role in World War I, to which country are you heading?",
+        "A": "Ukraine",
+        "B": "Austria-Hungary",
+        "C": "Republic of Ireland",
+        "D": "France",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Germany",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            2,
+            53,
+            39,
+            26
+        ],
+        "page_ranks": [
+            0.71,
+            18.29,
+            14.43,
+            9.32
+        ],
+        "distractor_depths": [
+            3,
+            4,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.07,
+            0.12,
+            -0.11
+        ],
+        "quintuple": [
+            "Austria Title",
+            "Country",
+            "BORDERS",
+            "<-",
+            "Germany",
+            "Country",
+            "BORDERS",
+            "->",
+            "France",
+            "Country"
+        ],
+        "helper_triple": [
+            "France",
+            "Country",
+            "INVOLVED_IN",
+            "->",
+            "World War I",
+            "Event"
+        ],
+        "valid": true
+    }
+]

@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who is the acclaimed singer-songwriter behind the hit song \"Cardigan\"?",
+        "A": "Chris Rock",
+        "B": "Fourteen US Presidents",
+        "C": "Ray J",
+        "D": "Taylor Alison Swift",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            41,
+            1
+        ],
+        "page_ranks": [
+            16.62,
+            0.49
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.1,
+            -0.03,
+            -0.02
+        ],
+        "triple": [
+            "Taylor Alison Swift",
+            "Person",
+            "CREATED",
+            "->",
+            "Cardigan",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Known for creating the song \"Is It Over Now?\", which individual was the subject of the documentary film \"Miss Americana\"?",
+        "A": "Taylor Alison Swift",
+        "B": "Kimbal Musk",
+        "C": "Freddie Mercury",
+        "D": "John Aniston",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            41,
+            1
+        ],
+        "page_ranks": [
+            0.49,
+            16.62,
+            0.49
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.05,
+            -0.0,
+            0.02
+        ],
+        "triple": [
+            "Taylor Alison Swift",
+            "Person",
+            "APPEARED_IN",
+            "->",
+            "Miss Americana",
+            "Film"
+        ],
+        "helper_triple": [
+            "Taylor Alison Swift",
+            "Person",
+            "CREATED",
+            "->",
+            "Is It Over Now?",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What Grammy-winning artist shares a major television award with a hip-hop mogul known for his entrepreneurial ventures?",
+        "A": "50 Cent",
+        "B": "Justin Bieber",
+        "C": "Destiny Hope Cyrus",
+        "D": "Taylor Alison Swift",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Primetime Emmy Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            41,
+            4,
+            20
+        ],
+        "page_ranks": [
+            16.62,
+            1.41,
+            6.95
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            -0.05,
+            0.07
+        ],
+        "quintuple": [
+            "Taylor Alison Swift",
+            "Person",
+            "WON",
+            "->",
+            "Primetime Emmy Award",
+            "Award",
+            "WON",
+            "<-",
+            "Jay-Z",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which iconic singer-songwriter, who created the hit song \"Anti-Hero,\" also won a prestigious music award for a song titled \"Flowers\"?",
+        "A": "Ryan Reynolds",
+        "B": "Taylor Alison Swift",
+        "C": "Pamela Fryman",
+        "D": "Khloé Kardashian",
+        "correct_answer": "B",
+        "hidden_middle_entity": "Grammy Awards",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            3,
+            8,
+            41,
+            1
+        ],
+        "page_ranks": [
+            1.17,
+            2.75,
+            16.62,
+            0.49
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.0,
+            -0.0,
+            -0.02
+        ],
+        "quintuple": [
+            "Flowers",
+            "Song",
+            "WON",
+            "->",
+            "Grammy Awards",
+            "Award",
+            "WON",
+            "<-",
+            "Taylor Alison Swift",
+            "Person"
+        ],
+        "helper_triple": [
+            "Taylor Alison Swift",
+            "Person",
+            "CREATED",
+            "->",
+            "Anti-Hero",
+            "Song"
+        ],
+        "valid": true
+    }
+]

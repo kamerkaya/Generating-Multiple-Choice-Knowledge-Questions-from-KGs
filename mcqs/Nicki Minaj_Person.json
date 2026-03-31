@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which actress starred in the movie \"Barbershop: The Next Cut\" alongside Ice Cube and Cedric the Entertainer?",
+        "A": "Roger Taylor",
+        "B": "King George V",
+        "C": "Brad Pitt",
+        "D": "Nicki Minaj",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            39,
+            1
+        ],
+        "page_ranks": [
+            13.95,
+            0.45
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.05,
+            0.09,
+            -0.09
+        ],
+        "triple": [
+            "Nicki Minaj",
+            "Person",
+            "ACTED_IN",
+            "->",
+            "Barbershop: The Next Cut",
+            "Movie"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which artist, known for being featured on the song \"Trolls,\" was awarded the Billboard Music Award?",
+        "A": "Nathan Rosen",
+        "B": "Ric Flair",
+        "C": "Nicki Minaj",
+        "D": "Sharon Tate",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            39,
+            2
+        ],
+        "page_ranks": [
+            0.45,
+            13.95,
+            0.78
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            -0.05,
+            0.07,
+            0.06
+        ],
+        "triple": [
+            "Nicki Minaj",
+            "Person",
+            "AWARDED",
+            "->",
+            "Billboard Music Award",
+            "Award"
+        ],
+        "helper_triple": [
+            "Nicki Minaj",
+            "Person",
+            "FEATURED_ON",
+            "->",
+            "Trolls",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What artist, known for their hit song \"Starships,\" released an album that includes this track?",
+        "A": "Nicki Minaj",
+        "B": "Jony Ive",
+        "C": "Nancy Dow",
+        "D": "Eva Braun",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Pink Friday Roman Reloaded",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            39,
+            2,
+            2
+        ],
+        "page_ranks": [
+            13.95,
+            0.79,
+            0.81
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.08,
+            -0.0,
+            0.1
+        ],
+        "quintuple": [
+            "Nicki Minaj",
+            "Person",
+            "RELEASED",
+            "->",
+            "Pink Friday Roman Reloaded",
+            "Album",
+            "INCLUDES",
+            "->",
+            "Starships",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which pop star, who has released the album \"Queen\", shares the distinction of being ranked alongside Justin Bieber by a renowned music organization?",
+        "A": "Nicki Minaj",
+        "B": "Willard Carroll Smith II",
+        "C": "Kimberly Noel Kardashian",
+        "D": "George Martin",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Billboard",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            31,
+            5,
+            39,
+            2
+        ],
+        "page_ranks": [
+            11.49,
+            1.68,
+            13.95,
+            0.9
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.06,
+            -0.06,
+            0.02
+        ],
+        "quintuple": [
+            "Justin Drew Bieber",
+            "Person",
+            "NAMED_POP_STAR",
+            "<-",
+            "Billboard",
+            "Organization",
+            "RANKED_BY",
+            "<-",
+            "Nicki Minaj",
+            "Person"
+        ],
+        "helper_triple": [
+            "Nicki Minaj",
+            "Person",
+            "RELEASED",
+            "->",
+            "Queen",
+            "Album"
+        ],
+        "valid": true
+    }
+]

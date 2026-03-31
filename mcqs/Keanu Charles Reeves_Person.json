@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "In the film \"Point Break,\" who took on the role of an action hero in the iconic 1991 surfing and crime thriller?",
+        "A": "Keanu Charles Reeves",
+        "B": "Ric Flair",
+        "C": "Woody Allen",
+        "D": "Scotty Moore",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            1
+        ],
+        "page_ranks": [
+            15.7,
+            0.51
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.03,
+            0.07,
+            0.03
+        ],
+        "triple": [
+            "Keanu Charles Reeves",
+            "Person",
+            "ACTION_HERO_ROLE",
+            "->",
+            "Point Break",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which actor, known for his action hero role in \"Point Break,\" reprised a role in the film \"Bill & Ted Face the Music\"?",
+        "A": "Keanu Charles Reeves",
+        "B": "Makaveli",
+        "C": "Richard Nixon",
+        "D": "Shawn Corey Carter",
+        "correct_answer": "A",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            37,
+            1
+        ],
+        "page_ranks": [
+            0.51,
+            15.7,
+            0.51
+        ],
+        "distractor_depths": [
+            3,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.11,
+            0.04,
+            0.07
+        ],
+        "triple": [
+            "Keanu Charles Reeves",
+            "Person",
+            "REPRISED_ROLE_IN",
+            "->",
+            "Bill & Ted Face the Music",
+            "Film"
+        ],
+        "helper_triple": [
+            "Keanu Charles Reeves",
+            "Person",
+            "ACTION_HERO_ROLE",
+            "->",
+            "Point Break",
+            "Film"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which Canadian-born actor shares citizenship with a tech billionaire known for founding a prominent electric vehicle company?",
+        "A": "George Washington",
+        "B": "Ketanji Brown Jackson",
+        "C": "Billy Ray Cyrus",
+        "D": "Keanu Charles Reeves",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Canada",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            37,
+            2,
+            18
+        ],
+        "page_ranks": [
+            15.7,
+            0.81,
+            6.52
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.09,
+            0.01,
+            0.01
+        ],
+        "quintuple": [
+            "Keanu Charles Reeves",
+            "Person",
+            "NATIONALITY",
+            "->",
+            "Canada",
+            "Location",
+            "CITIZENSHIP",
+            "<-",
+            "Elon Reeve Musk",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What actor, known for reprising the role of Ted, is a co-writer and creator of a franchise that shares its expansion with The Book of Elsewhere?",
+        "A": "Muhammad Ali",
+        "B": "Eminem",
+        "C": "Keanu Charles Reeves",
+        "D": "Destiny Hope Cyrus",
+        "correct_answer": "C",
+        "hidden_middle_entity": "Brzrkr",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            2,
+            37,
+            1
+        ],
+        "page_ranks": [
+            0.57,
+            0.98,
+            15.7,
+            0.51
+        ],
+        "distractor_depths": [
+            4,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.04,
+            -0.02,
+            0.01
+        ],
+        "quintuple": [
+            "The Book of Elsewhere",
+            "Franchise",
+            "EXPANDED_TO",
+            "<-",
+            "Brzrkr",
+            "Franchise",
+            "CO_WRITER_AND_CREATOR",
+            "<-",
+            "Keanu Charles Reeves",
+            "Person"
+        ],
+        "helper_triple": [
+            "Keanu Charles Reeves",
+            "Person",
+            "REPRISED_ROLE",
+            "->",
+            "Ted",
+            "Character"
+        ],
+        "valid": true
+    }
+]

@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Who served as an executive producer for the documentary series \"Living Undocumented\"?",
+        "A": "Jada Pinkett Smith",
+        "B": "6Ix9Ine",
+        "C": "Milwaukee Cannibal",
+        "D": "Selena Marie Gomez",
+        "correct_answer": "D",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            33,
+            1
+        ],
+        "page_ranks": [
+            12.97,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.01,
+            0.06
+        ],
+        "triple": [
+            "Selena Marie Gomez",
+            "Person",
+            "PRODUCED",
+            "->",
+            "Living Undocumented",
+            "Series"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which celebrity, who has received an American Music Award, was awarded the Order of Arts and Letters?",
+        "A": "Roger Taylor",
+        "B": "Kareem Abdul-Jabbar",
+        "C": "Selena Marie Gomez",
+        "D": "Edward",
+        "correct_answer": "C",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            33,
+            3
+        ],
+        "page_ranks": [
+            0.48,
+            12.97,
+            1.09
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.02,
+            0.01,
+            -0.01
+        ],
+        "triple": [
+            "Selena Marie Gomez",
+            "Person",
+            "AWARDED",
+            "->",
+            "Order Of Arts And Letters",
+            "Title"
+        ],
+        "helper_triple": [
+            "Selena Marie Gomez",
+            "Person",
+            "RECEIVED",
+            "->",
+            "American Music Award",
+            "Award"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who, along with Nicki Minaj, has been honored with the same prestigious music award?",
+        "A": "Selena Marie Gomez",
+        "B": "Afeni Shakur",
+        "C": "Ray J",
+        "D": "Cruz Bustamante",
+        "correct_answer": "A",
+        "hidden_middle_entity": "American Music Award",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            33,
+            3,
+            39
+        ],
+        "page_ranks": [
+            12.97,
+            1.09,
+            13.95
+        ],
+        "distractor_depths": [
+            5,
+            3,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.07,
+            0.02,
+            0.06
+        ],
+        "quintuple": [
+            "Selena Marie Gomez",
+            "Person",
+            "RECEIVED",
+            "->",
+            "American Music Award",
+            "Award",
+            "AWARDED",
+            "<-",
+            "Nicki Minaj",
+            "Person"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who provided the voice for a character in the Hotel Transylvania film franchise and also formed the band that released the album \"A Year Without Rain\"?",
+        "A": "Selena Marie Gomez",
+        "B": "Lee Jun-Fan",
+        "C": "Diana Princess of Wales",
+        "D": "Freddie Mercury",
+        "correct_answer": "A",
+        "hidden_middle_entity": "Selena Gomez & The Scene",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            4,
+            33,
+            1
+        ],
+        "page_ranks": [
+            0.54,
+            1.85,
+            12.97,
+            0.48
+        ],
+        "distractor_depths": [
+            5,
+            5,
+            4
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            -0.0,
+            0.02
+        ],
+        "quintuple": [
+            "A Year Without Rain",
+            "Album",
+            "RELEASED",
+            "<-",
+            "Selena Gomez & The Scene",
+            "Band",
+            "FORMED",
+            "<-",
+            "Selena Marie Gomez",
+            "Person"
+        ],
+        "helper_triple": [
+            "Selena Marie Gomez",
+            "Person",
+            "VOICED_IN",
+            "->",
+            "Hotel Transylvania",
+            "Film franchise"
+        ],
+        "valid": true
+    }
+]

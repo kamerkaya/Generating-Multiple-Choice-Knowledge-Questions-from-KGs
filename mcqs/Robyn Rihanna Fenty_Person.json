@@ -1,0 +1,184 @@
+[
+    {
+        "stem": "Which singer and entrepreneur was recognized by the Recording Industry Association of America, earning massive acclaim for her contributions to the music industry?",
+        "A": "Neil Patrick Harris",
+        "B": "Robyn Rihanna Fenty",
+        "C": "Willard Carroll Smith II",
+        "D": "Lionel Messi",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            32,
+            7
+        ],
+        "page_ranks": [
+            12.93,
+            2.46
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.0,
+            0.02,
+            0.08
+        ],
+        "triple": [
+            "Robyn Rihanna Fenty",
+            "Person",
+            "RECOGNIZED_BY",
+            "->",
+            "Recording Industry Association of America",
+            "Organization"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Which Barbadian national, known for releasing the album \"Good Girl Gone Bad,\" is being referred to?",
+        "A": "Elvis Aaron Presley",
+        "B": "Robyn Rihanna Fenty",
+        "C": "Chuck Norris",
+        "D": "Doja Cat",
+        "correct_answer": "B",
+        "is_multihop": false,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            1,
+            32,
+            1
+        ],
+        "page_ranks": [
+            0.49,
+            12.93,
+            0.49
+        ],
+        "distractor_depths": [
+            2,
+            5,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            -0.1,
+            0.01,
+            -0.06
+        ],
+        "triple": [
+            "Robyn Rihanna Fenty",
+            "Person",
+            "HAS_NATIONALITY",
+            "->",
+            "Barbadian",
+            "Nationality"
+        ],
+        "helper_triple": [
+            "Robyn Rihanna Fenty",
+            "Person",
+            "RELEASED_ALBUM",
+            "->",
+            "Good Girl Gone Bad",
+            "Album"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "Who is recognized for their contributions by the organization that certified the song \"Love The Way You Lie\"?",
+        "A": "Amy Pascal",
+        "B": "Marshall Bruce Mathers III",
+        "C": "Paul McCartney",
+        "D": "Robyn Rihanna Fenty",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Recording Industry Association of America",
+        "is_multihop": true,
+        "helper_triple_used": false,
+        "degree_centralities": [
+            32,
+            7,
+            2
+        ],
+        "page_ranks": [
+            12.93,
+            2.46,
+            0.75
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            5
+        ],
+        "node_embedding_similarity_scores": [
+            0.01,
+            0.09,
+            -0.11
+        ],
+        "quintuple": [
+            "Robyn Rihanna Fenty",
+            "Person",
+            "RECOGNIZED_BY",
+            "->",
+            "Recording Industry Association of America",
+            "Organization",
+            "CERTIFIED_BY",
+            "<-",
+            "Love The Way You Lie",
+            "Song"
+        ],
+        "valid": true
+    },
+    {
+        "stem": "What artist, who released the album \"A Girl Like Me,\" is recognized by the same organization that certified Eminem's song \"Lose Yourself\"?",
+        "A": "Scooter Braun",
+        "B": "Miley Ray Cyrus",
+        "C": "Scotty Moore",
+        "D": "Robyn Rihanna Fenty",
+        "correct_answer": "D",
+        "hidden_middle_entity": "Recording Industry Association of America",
+        "is_multihop": true,
+        "helper_triple_used": true,
+        "degree_centralities": [
+            3,
+            7,
+            32,
+            1
+        ],
+        "page_ranks": [
+            1.15,
+            2.46,
+            12.93,
+            0.49
+        ],
+        "distractor_depths": [
+            5,
+            4,
+            3
+        ],
+        "node_embedding_similarity_scores": [
+            0.03,
+            0.02,
+            -0.1
+        ],
+        "quintuple": [
+            "Lose Yourself",
+            "Song",
+            "CERTIFIED_BY",
+            "->",
+            "Recording Industry Association of America",
+            "Organization",
+            "RECOGNIZED_BY",
+            "<-",
+            "Robyn Rihanna Fenty",
+            "Person"
+        ],
+        "helper_triple": [
+            "Robyn Rihanna Fenty",
+            "Person",
+            "RELEASED_ALBUM",
+            "->",
+            "A Girl Like Me",
+            "Album"
+        ],
+        "valid": true
+    }
+]
